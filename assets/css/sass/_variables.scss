@@ -1,6 +1,7 @@
 $white: #ffffff;
 $gray: #a9a8a9;
 $orange: #F0604B;
+$purple: #5E4698;
 
 $light-gray: #ededee;
 $light-blue: #33CBCB;
@@ -14,4 +15,12 @@ $dark-blue: #0A2C47;
   font-weight: 500;
   line-height: 28px;
   margin-top: 0;
+}
+
+@mixin btn-style($bg, $color) {
+  background: $bg;
+  border: 0;
+  border-radius: 32px;
+  color: $color;
+  padding: 10px 22px;
 }

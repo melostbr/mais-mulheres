@@ -18,12 +18,8 @@
   }
 
   &__button {
-    background: $orange;
-    border: 0;
-    border-radius: 32px;
-    color: $white;
+    @include btn-style($orange, $white);
     display: block;
     margin: 40px auto 0;
-    padding: 10px 22px;
   }
 }

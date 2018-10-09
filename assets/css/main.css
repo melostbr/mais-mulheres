@@ -35,14 +35,24 @@
     border: 0;
     border-radius: 32px;
     color: #ffffff;
+    padding: 10px 22px;
     display: block;
-    margin: 40px auto 0;
-    padding: 10px 22px; }
+    margin: 40px auto 0; }
 
 .sponsorship {
   padding: 40px 0; }
   .sponsorship__title {
     color: #F0604B;
     text-align: center; }
+
+.support__flex {
+  display: flex;
+  justify-content: space-between; }
+.support__button {
+  background: #5E4698;
+  border: 0;
+  border-radius: 32px;
+  color: #ffffff;
+  padding: 10px 22px; }
 
 /*# sourceMappingURL=main.css.map */

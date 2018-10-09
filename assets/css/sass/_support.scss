@@ -1,0 +1,10 @@
+.support {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    @include btn-style($purple, $white);
+  }
+}
