@@ -1,0 +1,9 @@
+.sponsorship {
+  padding: 40px 0;
+
+  &__title {
+    @extend %title;
+    color: $orange;
+    text-align: center;
+  }
+}

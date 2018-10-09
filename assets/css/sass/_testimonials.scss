@@ -1,5 +1,6 @@
 .testimonials {
   background: $light-gray;
+  padding: 40px 0;
 
   &__flex {
     display: flex;
@@ -7,9 +8,7 @@
   }
 
   &__title {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 28px;
+    @extend %title;
 
     &:nth-of-type(1) {
       align-items: flex-start;

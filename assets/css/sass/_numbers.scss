@@ -1,8 +1,29 @@
 .numbers {
   background: $light-orange;
+  padding: 40px 0;
+
+  &__title {
+    @extend %title;
+    color: $orange;
+    text-align: center;
+  }
 
   &__flex {
     display: flex;
     justify-content: space-between;
+  }
+
+  &__item {
+    color: $dark-blue;
+  }
+
+  &__button {
+    background: $orange;
+    border: 0;
+    border-radius: 32px;
+    color: $white;
+    display: block;
+    margin: 40px auto 0;
+    padding: 10px 22px;
   }
 }
