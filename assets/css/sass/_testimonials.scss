@@ -26,4 +26,15 @@
       color: $gold-tips;
     }
   }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__hashtag {
+    font-style: italic;
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
