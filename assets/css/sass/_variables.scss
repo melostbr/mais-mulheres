@@ -1,19 +1,16 @@
 $white: #ffffff;
 $gray: #a9a8a9;
-$purple: #5E4698;
-
-$light-gray: #ededee;
-$light-blue: #33CBCB;
-$light-orange: #FBCF8C;
 
 $dark-gray: #4b4b4b;
 
-
 $wild-sand: #F6F6F6;
+$gold-tips: #EAC419;
+$california: #FC9702;
 $burnt-sienna: #F0604B;
+$victoria: #5E4698;
 $danube: #7CA0D4;
 $downriver: #0A2C47;
-$gold-tips: #EAC419;
+$calypso: #2F758E;
 
 %title {
   font-size: 24px;
@@ -35,4 +32,8 @@ $gold-tips: #EAC419;
   border-radius: 32px;
   color: $color;
   padding: 10px 22px;
+
+  &:hover {
+    background: rgba($bg, .7);
+  }
 }
