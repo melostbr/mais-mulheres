@@ -8,13 +8,26 @@ $light-blue: #33CBCB;
 $light-orange: #FBCF8C;
 
 $dark-gray: #4b4b4b;
-$dark-blue: #0A2C47;
+
+$wild-sand: #F6F6F6;
+
+$danube: #7CA0D4;
+$downriver: #0A2C47;
+
+$gold-tips: #EAC419;
 
 %title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 28px;
   margin-top: 0;
+  text-transform: uppercase;
+}
+
+%text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 @mixin btn-style($bg, $color) {
