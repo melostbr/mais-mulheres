@@ -1,5 +1,4 @@
 .testimonials {
-  background: $light-gray;
   padding: 40px 0;
 
   &__flex {
@@ -12,6 +11,7 @@
 
     &:nth-of-type(1) {
       align-items: flex-start;
+      text-align: right;
     }
 
     &:nth-of-type(2) {
