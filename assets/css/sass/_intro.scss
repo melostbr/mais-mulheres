@@ -1,0 +1,26 @@
+.intro {
+  padding-bottom: 48px;
+  padding-top: 56px;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    &:nth-child(1) {
+      margin-right: 24px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 24px;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__button {
+    @include btn-style($cupid, $white);
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -37,6 +37,28 @@
     .banner__button:hover {
       background: rgba(252, 151, 2, 0.7); }
 
+.intro {
+  padding-bottom: 48px;
+  padding-top: 56px; }
+  .intro__content {
+    display: flex;
+    justify-content: center; }
+  .intro__image:nth-child(1) {
+    margin-right: 24px; }
+  .intro__image:nth-child(3) {
+    margin-left: 24px;
+    transform: rotate(180deg); }
+  .intro__button {
+    background: #F9BBC6;
+    border: 0;
+    border-radius: 32px;
+    color: #ffffff;
+    padding: 10px 22px;
+    display: block;
+    margin: 0 auto; }
+    .intro__button:hover {
+      background: rgba(249, 187, 198, 0.7); }
+
 .numbers {
   background: #F6F6F6;
   padding: 42px 0; }
