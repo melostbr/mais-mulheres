@@ -1,9 +1,43 @@
 .footer {
   background: $victoria;
+  color: $white;
   padding: 40px 0;
 
   &__logo {
     display: block;
     margin: 0 auto;
   }
+
+  &__follow {
+    color: $burnt-sienna;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__rule {
+    margin-top: 32px;
+    opacity: 0.1;
+  }
+
+  &__copyright {
+    margin-top: 32px;
+    text-align: center;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px auto 0;
+  max-width: 300px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px auto 0;
+  max-width: 500px;
 }
