@@ -18,9 +18,18 @@
     }
   }
 
-  &__button {
-    @include btn-style($cupid, $white);
-    display: block;
-    margin: 0 auto;
+  &__buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    .twitter {
+      @include btn-style($white, $chambray, 1px solid $mercury);
+      margin-right: 16px;
+    }
+    
+    .facebook {
+      @include btn-style($white, $cerulean, 1px solid $mercury);
+    }
   }
 }

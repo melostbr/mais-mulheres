@@ -23,6 +23,14 @@
   }
 
   &__button {
-    @include btn-style($california, $white);
+    &--twitter {
+      @include btn-style($white, $chambray);
+      border: 1px solid $mercury;
+    }
+    
+    &--facebook {
+      @include btn-style($white, $cerulean);
+      border: 1px solid $mercury;
+    }
   }
 }
