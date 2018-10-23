@@ -1,4 +1,5 @@
 $white: #ffffff;
+$mercury: #E3E3E3;
 $wild-sand: #F6F6F6;
 $cupid: #F9BBC6;
 $gold-tips: #EAC419;
@@ -8,6 +9,8 @@ $victoria: #5E4698;
 $danube: #7CA0D4;
 $calypso: #2F758E;
 $downriver: #0A2C47;
+$chambray: #3B5998;
+$cerulean: #00ACED;
 
 %title {
   font-size: 24px;
@@ -23,9 +26,9 @@ $downriver: #0A2C47;
   line-height: 20px;
 }
 
-@mixin btn-style($bg, $color) {
+@mixin btn-style($bg, $color, $border: 0) {
   background: $bg;
-  border: 0;
+  border: $border;
   border-radius: 32px;
   color: $color;
   padding: 10px 22px;
