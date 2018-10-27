@@ -1,0 +1,16 @@
+body * {
+  font-family: 'Futura', sans-serif ;
+}
+
+.twitter-button {
+  @include btn-style($white, $chambray, 1px solid $mercury);
+  margin-right: 16px;
+}
+
+.facebook-button {
+  @include btn-style($white, $cerulean, 1px solid $mercury);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
