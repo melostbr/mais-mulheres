@@ -1,5 +1,5 @@
 .numbers {
-  background: $wild-sand;
+  background: $cupid;
   padding: 42px 0;
 
   .header {
@@ -8,7 +8,7 @@
   
     &__item {
       &:nth-child(1) {
-        border-right: 3px solid $burnt-sienna;
+        border-right: 3px solid $victoria;
         flex-grow: 1;
         flex-basis: 0;
         margin-right: 32px;
@@ -16,6 +16,7 @@
       }
   
       &:nth-child(2) {
+        align-self: center;
         flex-grow: 1;
         flex-basis: 0;
       }
@@ -23,35 +24,70 @@
     
     &__title {
       @extend %title;
-      color: $burnt-sienna;
+      color: $victoria;
       text-align: right;
       margin-bottom: 0;
     }
 
     &__text {
       @extend %text;
+      color: $white;
       margin: 0;
       text-align: right;
     }
   
     &__subtitle {
       @extend %title;
-      color: $burnt-sienna;
+      color: $victoria;
       margin-bottom: 0;
     }
   
     &__hashtag {
+      color: $white;
       margin: 0;
     }
   }
   
-  .data {
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+  
+  .info {
+    align-items: center;
+    background: $white;
+    color: #4A4A4A;
     display: flex;
-    justify-content: space-between;
-    margin-top: 56px;
-    
-    &__info {
-      color: $downriver;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-height: 260px;
+    padding: 14px;
+
+    &:hover {
+      background: $victoria;
+      color: $white;
+
+      .info__highlight {
+        color: $white;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__highlight {
+      color: $victoria;
+      display: block;
+      font-size: 48px;
+      font-style: italic;
+      font-weight: 600;
     }
   }
 }
