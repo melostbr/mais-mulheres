@@ -1,0 +1,102 @@
+.how {
+  background: $wild-sand;
+  padding: 48px 0 56px;
+
+  &__title {
+    @extend %title;
+    color: $danube;
+
+    &--highlight {
+      display: block;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+  &__text {
+    @extend %text;
+    max-width: 550px;
+    margin: 48px auto 0;
+    text-align: center;
+  }
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
+}
+
+.step {
+  align-items: center;
+  background: $white;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  margin-top: 8px;
+  padding: 8px;
+
+  @include breakpoint(md) {
+    flex-direction: column;
+    padding: 16px 48px;
+    margin-top: 0;
+  }
+
+  &:not(:last-child) {
+    @include breakpoint(md) {
+      margin-right: 8px;
+    }
+  }
+
+  &__image {
+    display: block;
+
+    &--computer {
+      max-height: 100px;
+      margin-right: 16px;
+      max-width: 100px;
+    }
+
+    &--at {
+      max-height: 100px;
+      margin-right: 32px;
+      max-width: 84px;
+    }
+
+    &--hands {
+      max-height: 110px;
+      margin-right: 8px;
+      max-width: 110px;
+    }
+ 
+    @include breakpoint(md) {
+      &--computer {
+        max-height: 120px;
+        margin-bottom: 16px;
+        margin-right: 0;
+        max-width: 120px;
+      }
+      
+      &--at {
+        max-height: 120px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        max-width: 100px;
+      }
+
+      &--hands {
+        max-height: 200px;
+        margin-bottom: 4px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

@@ -1,11 +1,11 @@
-.numbers .header__title, .numbers .header__subtitle, .testimonials__title, .support__title, .sponsorship__title {
+.numbers .header__title, .numbers .header__subtitle, .testimonials__title, .how__title, .support__title, .sponsorship__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
   margin-top: 0;
   text-transform: uppercase; }
 
-.numbers .header__text, .support__text {
+.numbers .header__text, .how__text, .support__text {
   font-size: 16px;
   font-weight: 300;
   line-height: 20px; }
@@ -135,14 +135,11 @@ body * {
   color: #00ACED;
   padding: 10px 22px;
   font-size: 18px;
-  margin-bottom: 24px;
   width: 100%; }
   .twitter-button:hover {
     background: rgba(255, 255, 255, 0.7); }
   @media (min-width: 576px) {
     .twitter-button {
-      margin-bottom: 0;
-      margin-right: 16px;
       width: auto; } }
 
 .facebook-button {
@@ -152,12 +149,17 @@ body * {
   color: #3B5998;
   padding: 10px 22px;
   font-size: 18px;
+  margin-bottom: 24px;
   width: 100%; }
   .facebook-button:hover {
     background: rgba(255, 255, 255, 0.7); }
   @media (min-width: 576px) {
     .facebook-button {
+      margin-bottom: 0;
+      margin-right: 16px;
       width: auto; } }
+  .facebook-button img {
+    vertical-align: middle; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -301,8 +303,77 @@ body * {
     margin-bottom: 0;
     text-align: center; }
 
-.support {
+.how {
   background: #F6F6F6;
+  padding: 48px 0 56px; }
+  .how__title {
+    color: #7CA0D4; }
+    .how__title--highlight {
+      display: block;
+      font-weight: 600;
+      font-style: italic; }
+  .how__text {
+    max-width: 550px;
+    margin: 48px auto 0;
+    text-align: center; }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 768px) {
+    .steps {
+      flex-direction: row; } }
+
+.step {
+  align-items: center;
+  background: #ffffff;
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  margin-top: 8px;
+  padding: 8px; }
+  @media (min-width: 768px) {
+    .step {
+      flex-direction: column;
+      padding: 16px 48px;
+      margin-top: 0; } }
+  @media (min-width: 768px) {
+    .step:not(:last-child) {
+      margin-right: 8px; } }
+  .step__image {
+    display: block; }
+    .step__image--computer {
+      max-height: 100px;
+      margin-right: 16px;
+      max-width: 100px; }
+    .step__image--at {
+      max-height: 100px;
+      margin-right: 32px;
+      max-width: 84px; }
+    .step__image--hands {
+      max-height: 110px;
+      margin-right: 8px;
+      max-width: 110px; }
+    @media (min-width: 768px) {
+      .step__image--computer {
+        max-height: 120px;
+        margin-bottom: 16px;
+        margin-right: 0;
+        max-width: 120px; }
+      .step__image--at {
+        max-height: 120px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        max-width: 100px; }
+      .step__image--hands {
+        max-height: 200px;
+        margin-bottom: 4px;
+        max-width: 200px; } }
+  .step__text {
+    margin: 0; }
+
+.support {
   padding-top: 73px;
   padding-bottom: 85px; }
   .support__title {
