@@ -3,12 +3,26 @@ body * {
 }
 
 .twitter-button {
-  @include btn-style($white, $chambray, 1px solid $mercury);
-  margin-right: 16px;
+  @include btn-style($white, $cerulean, 1px solid $mercury);
+  font-size: 18px;
+  margin-bottom: 24px;
+  width: 100%;
+  
+  @include breakpoint(sm) {
+    margin-bottom: 0;
+    margin-right: 16px;
+    width: auto;
+  }
 }
 
 .facebook-button {
-  @include btn-style($white, $cerulean, 1px solid $mercury);
+  @include btn-style($white, $chambray, 1px solid $mercury);
+  font-size: 18px;
+  width: 100%;
+
+  @include breakpoint(sm) {
+    width: auto;
+  }
 }
 
 .uppercase {
