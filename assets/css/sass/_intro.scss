@@ -5,9 +5,25 @@
   &__content {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 680px;
+  }
+
+  &__text {
+    color: $tundora;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.9;
   }
 
   &__image {
+    display: none;
+    
+    @include breakpoint(md) {
+      align-self: center;
+      display: block;
+    }
+
     &:nth-child(1) {
       margin-right: 24px;
     }
@@ -21,15 +37,12 @@
   &__buttons {
     align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 24px;
     
-    .twitter {
-      @include btn-style($white, $chambray, 1px solid $mercury);
-      margin-right: 16px;
-    }
-    
-    .facebook {
-      @include btn-style($white, $cerulean, 1px solid $mercury);
+    @include breakpoint(sm) {
+      flex-direction: row;
+      justify-content: center;
     }
   }
 }
