@@ -421,6 +421,16 @@ body * {
   .accomplishment__title {
     color: #2F758E;
     text-align: center; }
+  .accomplishment__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px; }
+  .accomplishment .plus {
+    color: #2F758E;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 24px; }
 
 .sponsorship {
   padding: 40px 0 72px; }
