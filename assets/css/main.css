@@ -1,11 +1,11 @@
-.numbers .header__title, .numbers .header__subtitle, .testimonials__title, .how__title, .support__title, .sponsorship__title {
+.numbers .header__title, .numbers .header__subtitle, .testimonials__title, .how__title, .challenge__title, .accomplishment__title, .sponsorship__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
   margin-top: 0;
   text-transform: uppercase; }
 
-.numbers .header__text, .how__text, .support__text {
+.numbers .header__text, .how__text, .challenge__text {
   font-size: 16px;
   font-weight: 300;
   line-height: 20px; }
@@ -393,24 +393,34 @@ body * {
   .step__text {
     margin: 0; }
 
-.support {
+.challenge {
   padding-top: 73px;
   padding-bottom: 85px; }
-  .support__title {
-    color: #7CA0D4; }
-  .support__text {
+  .challenge__title {
+    color: #F0604B; }
+  .challenge__text {
     color: #0A2C47; }
-  .support__flex {
+  .challenge__flex {
     display: flex;
     justify-content: space-between; }
-  .support__button {
-    background: #7CA0D4;
-    border: 0;
+  .challenge__image {
+    height: 216px;
+    width: 216px; }
+  .challenge__button {
+    background: #ffffff;
+    border: 1px solid #E3E3E3;
     border-radius: 32px;
-    color: #ffffff;
+    color: #F0604B;
     padding: 10px 22px; }
-    .support__button:hover {
-      background: rgba(124, 160, 212, 0.7); }
+    .challenge__button:hover {
+      background: rgba(255, 255, 255, 0.7); }
+
+.accomplishment {
+  background: #F6F6F6;
+  padding: 56px 0; }
+  .accomplishment__title {
+    color: #2F758E;
+    text-align: center; }
 
 .sponsorship {
   padding: 40px 0 72px; }
