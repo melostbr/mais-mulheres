@@ -5,12 +5,9 @@ body * {
 .twitter-button {
   @include btn-style($white, $cerulean, 1px solid $mercury);
   font-size: 18px;
-  margin-bottom: 24px;
   width: 100%;
   
-  @include breakpoint(sm) {
-    margin-bottom: 0;
-    margin-right: 16px;
+  @include breakpoint(md) {
     width: auto;
   }
 }
@@ -18,10 +15,17 @@ body * {
 .facebook-button {
   @include btn-style($white, $chambray, 1px solid $mercury);
   font-size: 18px;
+  margin-bottom: 24px;
   width: 100%;
 
-  @include breakpoint(sm) {
+  @include breakpoint(md) {
+    margin-bottom: 0;
+    margin-right: 16px;
     width: auto;
+  }
+
+  img {
+    vertical-align: middle;
   }
 }
 

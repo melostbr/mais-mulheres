@@ -2,13 +2,46 @@
   background: $victoria;
   padding-top: 48px;
   padding-bottom: 96px;
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+
+    @include breakpoint(md) {
+      display: inline;
+    }
+  }
 }
 
 .banner {
+  align-items: center;
   color: $white;
   display: flex;
+  flex-direction: column;
   margin-top: 72px;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  @include breakpoint(lg) {
+    flex-direction: row;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+    max-height: 220px;
+
+    @include breakpoint(md) {
+      display: inline;
+    }
+  }
+
+  &__headline {
+    margin-top: 32px;
+
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+  }
 
   &__title {
     font-size: 40px;
@@ -20,17 +53,5 @@
   &__hashtag {
     text-transform: uppercase;
     font-weight: 100;
-  }
-
-  &__button {
-    &--twitter {
-      @include btn-style($white, $chambray);
-      border: 1px solid $mercury;
-    }
-    
-    &--facebook {
-      @include btn-style($white, $cerulean);
-      border: 1px solid $mercury;
-    }
   }
 }

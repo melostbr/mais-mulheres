@@ -40,7 +40,7 @@
     flex-direction: column;
     margin-top: 24px;
     
-    @include breakpoint(sm) {
+    @include breakpoint(md) {
       flex-direction: row;
       justify-content: center;
     }

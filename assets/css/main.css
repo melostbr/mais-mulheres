@@ -138,7 +138,7 @@ body * {
   width: 100%; }
   .twitter-button:hover {
     background: rgba(255, 255, 255, 0.7); }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .twitter-button {
       width: auto; } }
 
@@ -153,7 +153,7 @@ body * {
   width: 100%; }
   .facebook-button:hover {
     background: rgba(255, 255, 255, 0.7); }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .facebook-button {
       margin-bottom: 0;
       margin-right: 16px;
@@ -168,16 +168,35 @@ body * {
   background: #5E4698;
   padding-top: 48px;
   padding-bottom: 96px; }
+  .main__logo {
+    display: block;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .main__logo {
+        display: inline; } }
 
 .banner {
+  align-items: center;
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   margin-top: 72px;
   justify-content: space-between; }
+  @media (min-width: 992px) {
+    .banner {
+      flex-direction: row; } }
   .banner__image {
+    display: block;
+    margin: 0 auto;
     max-height: 220px; }
+    @media (min-width: 768px) {
+      .banner__image {
+        display: inline; } }
   .banner__headline {
-    margin-left: 77px; }
+    margin-top: 32px; }
+    @media (min-width: 768px) {
+      .banner__headline {
+        margin-top: 0; } }
   .banner__title {
     font-size: 40px;
     letter-spacing: 1px;
@@ -216,7 +235,7 @@ body * {
     display: flex;
     flex-direction: column;
     margin-top: 24px; }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       .intro__buttons {
         flex-direction: row;
         justify-content: center; } }
@@ -329,13 +348,14 @@ body * {
   align-items: center;
   background: #ffffff;
   display: flex;
-  flex: 1;
   justify-content: flex-start;
   margin-top: 8px;
+  min-height: 136px;
   padding: 8px; }
   @media (min-width: 768px) {
     .step {
       flex-direction: column;
+      flex: 1;
       padding: 16px 48px;
       margin-top: 0; } }
   @media (min-width: 768px) {
@@ -355,7 +375,7 @@ body * {
       max-height: 110px;
       margin-right: 8px;
       max-width: 110px; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .step__image--computer {
         max-height: 120px;
         margin-bottom: 16px;
