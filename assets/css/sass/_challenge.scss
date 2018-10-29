@@ -1,12 +1,11 @@
-.support {
-  background: $wild-sand;
+.challenge {
   padding-top: 73px;
   padding-bottom: 85px;
 
   &__title {
     @extend %title;
 
-    color: #7CA0D4;
+    color: $burnt-sienna;
   }
 
   &__text {
@@ -20,7 +19,12 @@
     justify-content: space-between;
   }
 
+  &__image {
+    height: 216px;
+    width: 216px;
+  }
+
   &__button {
-    @include btn-style($danube, $white);
+    @include btn-style($white, $burnt-sienna, 1px solid $mercury);
   }
 }
