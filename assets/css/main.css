@@ -137,7 +137,9 @@ body * {
   font-size: 18px;
   width: 100%; }
   .twitter-button:hover {
-    background: rgba(255, 255, 255, 0.7); }
+    background: #00ACED;
+    border: 1px solid #00ACED;
+    color: #ffffff; }
   @media (min-width: 768px) {
     .twitter-button {
       width: auto; } }
@@ -152,7 +154,9 @@ body * {
   margin-bottom: 24px;
   width: 100%; }
   .facebook-button:hover {
-    background: rgba(255, 255, 255, 0.7); }
+    background: #3B5998;
+    border: 1px solid #3B5998;
+    color: #ffffff; }
   @media (min-width: 768px) {
     .facebook-button {
       margin-bottom: 0;
@@ -267,6 +271,9 @@ body * {
       @media (min-width: 768px) {
         .numbers .header__title {
           text-align: right; } }
+      .numbers .header__title--highlight {
+        font-weight: 600;
+        font-style: italic; }
     .numbers .header__text {
       color: #ffffff;
       font-weight: 300;
@@ -276,10 +283,16 @@ body * {
           text-align: right; } }
     .numbers .header__subtitle {
       color: #5E4698;
+      font-weight: 600;
       margin-bottom: 0; }
+      .numbers .header__subtitle--highlight {
+        color: #ffffff;
+        display: block;
+        font-weight: 300; }
     .numbers .header__hashtag {
       color: #ffffff;
-      margin: 0; }
+      margin: 0;
+      text-transform: uppercase; }
 
 .data {
   display: flex;
@@ -423,7 +436,9 @@ body * {
     color: #F0604B;
     padding: 10px 22px; }
     .challenge__button:hover {
-      background: rgba(255, 255, 255, 0.7); }
+      background: #F0604B;
+      border: 1px solid #F0604B;
+      color: #ffffff; }
 
 .accomplishment {
   background: #F6F6F6;
@@ -459,7 +474,9 @@ body * {
     display: block;
     margin: 60px auto 0; }
     .support__button:hover {
-      background: rgba(47, 117, 142, 0.7); }
+      background: #ffffff;
+      border: 1px solid #ffffff;
+      color: #2F758E; }
 
 .footer {
   background: #5E4698;

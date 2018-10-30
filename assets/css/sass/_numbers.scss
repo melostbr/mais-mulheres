@@ -37,6 +37,11 @@
       @include breakpoint(md) {
         text-align: right;
       }
+
+      &--highlight {
+        font-weight: 600;
+        font-style: italic;
+      }
     }
 
     &__text {
@@ -53,12 +58,20 @@
     &__subtitle {
       @extend %title;
       color: $victoria;
+      font-weight: 600;
       margin-bottom: 0;
+
+      &--highlight {
+        color: $white;
+        display: block;
+        font-weight: 300;
+      }
     }
   
     &__hashtag {
       color: $white;
       margin: 0;
+      text-transform: uppercase;
     }
   }
   
