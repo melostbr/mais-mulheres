@@ -35,13 +35,14 @@
   align-items: center;
   background: $white;
   display: flex;
-  flex: 1;
   justify-content: flex-start;
   margin-top: 8px;
+  min-height: 136px;
   padding: 8px;
-
+  
   @include breakpoint(md) {
     flex-direction: column;
+    flex: 1;
     padding: 16px 48px;
     margin-top: 0;
   }
@@ -73,7 +74,7 @@
       max-width: 110px;
     }
  
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
       &--computer {
         max-height: 120px;
         margin-bottom: 16px;
