@@ -7,33 +7,47 @@
     align-items: stretch;
   
     &__item {
-      &:nth-child(1) {
-        border-right: 3px solid $victoria;
-        flex-grow: 1;
-        flex-basis: 0;
-        margin-right: 32px;
-        padding-right: 32px;
+      &:nth-child(1) {        
+        @include breakpoint(md) {
+          border-right: 3px solid $victoria;
+          flex-grow: 1;
+          flex-basis: 0;
+          margin-right: 32px;
+          padding-right: 32px;
+        }
       }
   
       &:nth-child(2) {
-        align-self: center;
-        flex-grow: 1;
-        flex-basis: 0;
+        display: none;
+
+        @include breakpoint(md) {
+          align-self: center;
+          display: block;
+          flex-grow: 1;
+          flex-basis: 0;
+        }
       }
     }
     
     &__title {
       @extend %title;
       color: $victoria;
-      text-align: right;
-      margin-bottom: 0;
+      margin-bottom: 0;      
+
+      @include breakpoint(md) {
+        text-align: right;
+      }
     }
 
     &__text {
       @extend %text;
       color: $white;
-      margin: 0;
-      text-align: right;
+      font-weight: 300;
+      margin: 8px 0 0;
+      
+      @include breakpoint(md) {
+        text-align: right;
+      }
     }
   
     &__subtitle {
@@ -52,6 +66,7 @@
 
 .data {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 56px;
   
@@ -60,8 +75,7 @@
     background: $white;
     color: #4A4A4A;
     display: flex;
-    flex-basis: 0;
-    flex-grow: 1;
+    flex: 1;
     min-height: 260px;
     padding: 14px;
 

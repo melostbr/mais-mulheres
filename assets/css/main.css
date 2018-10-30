@@ -1,4 +1,4 @@
-.numbers .header__title, .numbers .header__subtitle, .testimonials__title, .how__title, .challenge__title, .accomplishment__title, .sponsorship__title {
+.numbers .header__title, .numbers .header__subtitle, .testimonials__title, .how__title, .challenge__title, .accomplishment__title, .support__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -246,24 +246,34 @@ body * {
   .numbers .header {
     display: flex;
     align-items: stretch; }
-    .numbers .header__item:nth-child(1) {
-      border-right: 3px solid #5E4698;
-      flex-grow: 1;
-      flex-basis: 0;
-      margin-right: 32px;
-      padding-right: 32px; }
+    @media (min-width: 768px) {
+      .numbers .header__item:nth-child(1) {
+        border-right: 3px solid #5E4698;
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-right: 32px;
+        padding-right: 32px; } }
     .numbers .header__item:nth-child(2) {
-      align-self: center;
-      flex-grow: 1;
-      flex-basis: 0; }
+      display: none; }
+      @media (min-width: 768px) {
+        .numbers .header__item:nth-child(2) {
+          align-self: center;
+          display: block;
+          flex-grow: 1;
+          flex-basis: 0; } }
     .numbers .header__title {
       color: #5E4698;
-      text-align: right;
       margin-bottom: 0; }
+      @media (min-width: 768px) {
+        .numbers .header__title {
+          text-align: right; } }
     .numbers .header__text {
       color: #ffffff;
-      margin: 0;
-      text-align: right; }
+      font-weight: 300;
+      margin: 8px 0 0; }
+      @media (min-width: 768px) {
+        .numbers .header__text {
+          text-align: right; } }
     .numbers .header__subtitle {
       color: #5E4698;
       margin-bottom: 0; }
@@ -432,15 +442,15 @@ body * {
     font-weight: 300;
     margin: 0 24px; }
 
-.sponsorship {
+.support {
   padding: 40px 0 72px; }
-  .sponsorship__title {
-    color: #2F758E;
+  .support__title {
+    color: #5E4698;
     text-align: center; }
-  .sponsorship__image {
+  .support__image {
     display: block;
     margin: 32px auto 0; }
-  .sponsorship__button {
+  .support__button {
     background: #2F758E;
     border: 0;
     border-radius: 32px;
@@ -448,7 +458,7 @@ body * {
     padding: 10px 22px;
     display: block;
     margin: 60px auto 0; }
-    .sponsorship__button:hover {
+    .support__button:hover {
       background: rgba(47, 117, 142, 0.7); }
 
 .footer {
