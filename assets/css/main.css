@@ -481,23 +481,18 @@ body * {
   .support__title {
     color: #5E4698;
     text-align: center; }
-  .support__image {
-    display: block;
-    margin: 32px auto 0; }
-  .support__button {
-    background: #2F758E;
-    border: 0;
-    border-radius: 32px;
-    color: #ffffff;
-    padding: 10px 22px;
-    transition: all 0.2s ease-in-out;
-    display: block;
-    margin: 60px auto 0; }
-    .support__button:hover {
-      background: #ffffff;
-      border: 1px solid #ffffff;
-      color: #2F758E;
-      transition: all 0.2s ease-in-out; }
+  .support__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 576px) {
+      .support__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; } }
+  .support__logo {
+    margin: 36px 24px 24px 0;
+    max-height: 60px; }
 
 .footer {
   background: #5E4698;
