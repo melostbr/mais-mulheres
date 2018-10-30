@@ -135,7 +135,11 @@ body * {
   color: #00ACED;
   padding: 10px 22px;
   transition: all 0.2s ease-in-out;
+  background-image: url("../img/icons/icn-twitter.svg");
+  background-position: left 22px top 15px;
+  background-repeat: no-repeat;
   font-size: 18px;
+  padding-left: 48px;
   width: 100%; }
   .twitter-button:hover {
     background: #00ACED;
@@ -145,6 +149,10 @@ body * {
   @media (min-width: 768px) {
     .twitter-button {
       width: auto; } }
+  .twitter-button:hover {
+    background-image: url("../img/icons/icn-twitter-white.svg");
+    background-position: left 22px top 15px;
+    background-repeat: no-repeat; }
 
 .facebook-button {
   background: #ffffff;
@@ -153,8 +161,12 @@ body * {
   color: #3B5998;
   padding: 10px 22px;
   transition: all 0.2s ease-in-out;
+  background-image: url("../img/icons/icn-facebook.svg");
+  background-position: left 28px top 12px;
+  background-repeat: no-repeat;
   font-size: 18px;
   margin-bottom: 24px;
+  padding-left: 44px;
   width: 100%; }
   .facebook-button:hover {
     background: #3B5998;
@@ -166,6 +178,10 @@ body * {
       margin-bottom: 0;
       margin-right: 16px;
       width: auto; } }
+  .facebook-button:hover {
+    background-image: url("../img/icons/icn-facebook-white.svg");
+    background-position: left 28px top 12px;
+    background-repeat: no-repeat; }
   .facebook-button img {
     vertical-align: middle; }
 
