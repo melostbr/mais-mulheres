@@ -134,12 +134,14 @@ body * {
   border-radius: 32px;
   color: #00ACED;
   padding: 10px 22px;
+  transition: all 0.2s ease-in-out;
   font-size: 18px;
   width: 100%; }
   .twitter-button:hover {
     background: #00ACED;
     border: 1px solid #00ACED;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: all 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .twitter-button {
       width: auto; } }
@@ -150,13 +152,15 @@ body * {
   border-radius: 32px;
   color: #3B5998;
   padding: 10px 22px;
+  transition: all 0.2s ease-in-out;
   font-size: 18px;
   margin-bottom: 24px;
   width: 100%; }
   .facebook-button:hover {
     background: #3B5998;
     border: 1px solid #3B5998;
-    color: #ffffff; }
+    color: #ffffff;
+    transition: all 0.2s ease-in-out; }
   @media (min-width: 768px) {
     .facebook-button {
       margin-bottom: 0;
@@ -326,17 +330,30 @@ body * {
 .testimonials {
   padding: 40px 0; }
   .testimonials__flex {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      .testimonials__flex {
+        flex-direction: row; } }
   .testimonials__title:nth-of-type(1) {
-    align-items: flex-start;
     text-align: right; }
-  .testimonials__title:nth-of-type(2) {
-    align-items: flex-end; }
+    @media (min-width: 768px) {
+      .testimonials__title:nth-of-type(1) {
+        align-self: flex-start; } }
+  @media (min-width: 768px) {
+    .testimonials__title:nth-of-type(2) {
+      align-self: flex-end; } }
   .testimonials__title--blue {
     color: #0A2C47; }
   .testimonials__title--gold {
     color: #EAC419; }
+  .testimonials__title br {
+    display: none; }
+    @media (min-width: 768px) {
+      .testimonials__title br {
+        display: block; } }
   .testimonials__image {
     display: block;
     margin: 0 auto; }
@@ -434,11 +451,13 @@ body * {
     border: 1px solid #E3E3E3;
     border-radius: 32px;
     color: #F0604B;
-    padding: 10px 22px; }
+    padding: 10px 22px;
+    transition: all 0.2s ease-in-out; }
     .challenge__button:hover {
       background: #F0604B;
       border: 1px solid #F0604B;
-      color: #ffffff; }
+      color: #ffffff;
+      transition: all 0.2s ease-in-out; }
 
 .accomplishment {
   background: #F6F6F6;
@@ -471,12 +490,14 @@ body * {
     border-radius: 32px;
     color: #ffffff;
     padding: 10px 22px;
+    transition: all 0.2s ease-in-out;
     display: block;
     margin: 60px auto 0; }
     .support__button:hover {
       background: #ffffff;
       border: 1px solid #ffffff;
-      color: #2F758E; }
+      color: #2F758E;
+      transition: all 0.2s ease-in-out; }
 
 .footer {
   background: #5E4698;

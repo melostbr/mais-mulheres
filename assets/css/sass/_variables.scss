@@ -33,10 +33,12 @@ $cerulean: #00ACED;
   border-radius: 32px;
   color: $color;
   padding: 10px 22px;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     background: $color;
     border: 1px solid $color;
     color: $bg;
+    transition: all 0.2s ease-in-out;
   }
 }
