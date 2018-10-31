@@ -377,7 +377,8 @@ body * {
         display: block; } }
   .testimonials__image {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-height: 160px; }
   .testimonials__hashtag {
     color: #EAC419;
     font-size: 16px;
