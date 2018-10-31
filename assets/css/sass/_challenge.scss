@@ -15,6 +15,10 @@
     @include breakpoint(md) {
       width: 80%;
     }
+
+    a {
+      color: $burnt-sienna;
+    }
   }
 
   &__flex {

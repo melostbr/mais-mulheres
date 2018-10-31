@@ -267,8 +267,12 @@ body {
 .data {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 56px; }
+  @media (min-width: 576px) {
+    .data {
+      flex-direction: row; } }
   .data .info {
     justify-content: center;
     background: #ffffff;
@@ -277,10 +281,15 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    margin-bottom: 24px;
     min-height: 260px;
     padding: 14px;
     text-align: center;
     text-decoration: none; }
+    @media (min-width: 576px) {
+      .data .info {
+        margin: 0 8px 8px 0;
+        min-width: 200px; } }
     .data .info span:first-child {
       font-family: "Futura Book";
       text-transform: uppercase; }
@@ -289,8 +298,6 @@ body {
       color: #ffffff; }
       .data .info:hover .info__highlight {
         color: #ffffff; }
-    .data .info:not(:last-child) {
-      margin-right: 8px; }
     .data .info__text {
       color: inherit; }
     .data .info__highlight {
@@ -442,6 +449,8 @@ body {
     @media (min-width: 768px) {
       .challenge__text {
         width: 80%; } }
+    .challenge__text a {
+      color: #F0604B; }
   .challenge__flex {
     display: flex;
     flex-direction: column;

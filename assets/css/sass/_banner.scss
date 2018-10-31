@@ -54,10 +54,17 @@
     }
   }
 
+  &__join-us {
+    font-size: 16px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+  }
+  
   &__hashtag {
-    text-transform: uppercase;
-    font-family: "Futura Light";
     display: block;
+    font-family: "Futura Light";
     letter-spacing: 2px;
+    margin: 0 0 48px;
+    text-transform: uppercase;
   }
 }

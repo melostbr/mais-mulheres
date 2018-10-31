@@ -2,6 +2,11 @@ body * {
   font-family: 'Futura Book', sans-serif ;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .twitter-button {
   @include btn-style($white, $cerulean, 1px solid $mercury);
   background-image: url('../img/icons/icn-twitter.svg');
