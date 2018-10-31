@@ -162,22 +162,24 @@ body {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    max-width: 680px;
-    height: 280px; }
-    .intro__content::before {
-      content: '';
-      background: url("../img/curly-bracket.png") center no-repeat;
-      height: 100%;
-      width: 200px; }
-    .intro__content::after {
-      content: '';
-      background: url("../img/curly-bracket.png") center no-repeat;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      height: 100%;
-      width: 200px; }
+    max-width: 680px; }
+    @media (min-width: 576px) {
+      .intro__content {
+        height: 280px; }
+        .intro__content::before {
+          content: '';
+          background: url("../img/curly-bracket.png") center no-repeat;
+          height: 100%;
+          width: 200px; }
+        .intro__content::after {
+          content: '';
+          background: url("../img/curly-bracket.png") center no-repeat;
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          height: 100%;
+          width: 200px; } }
   .intro__text {
     color: #4A4A4A;
     font-size: 16px;
@@ -201,7 +203,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-top: 24px; }
+    margin-top: 32px; }
     @media (min-width: 768px) {
       .intro__buttons {
         flex-direction: row;
