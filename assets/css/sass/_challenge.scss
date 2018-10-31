@@ -10,6 +10,7 @@
   &__text {
     @extend %text;
     color: $downriver;
+    font-family: "Futura Book";
     
     @include breakpoint(md) {
       width: 80%;
@@ -46,7 +47,13 @@
     height: 216px;
   }
 
-  &__button {
+  &__report-button {
     @include btn-style($white, $burnt-sienna, 1px solid $mercury);
+    padding: 10px 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Futura Book";
+    display: inline-block;
+    margin: 20px 0;
   }
 }
