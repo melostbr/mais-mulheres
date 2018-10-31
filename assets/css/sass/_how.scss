@@ -43,6 +43,7 @@
   @include breakpoint(md) {
     flex-direction: column;
     flex: 1;
+    justify-content: center;
     padding: 16px 48px;
     margin-top: 0;
   }
@@ -68,30 +69,41 @@
       max-width: 84px;
     }
 
-    &--hands {
+    &--girl {
       max-height: 110px;
       margin-right: 8px;
       max-width: 110px;
+    }
+
+    @include breakpoint(md) {
+      &--computer {
+        margin-bottom: 16px;
+        margin-right: 0;
+      }
+      
+      &--at {
+        margin-bottom: 24px;
+        margin-right: 0;
+      }
+
+      &--girl {
+        margin-bottom: 16px;
+      }
     }
  
     @include breakpoint(lg) {
       &--computer {
         max-height: 120px;
-        margin-bottom: 16px;
-        margin-right: 0;
         max-width: 120px;
       }
       
       &--at {
         max-height: 120px;
-        margin-bottom: 24px;
-        margin-right: 0;
         max-width: 100px;
       }
 
-      &--hands {
+      &--girl {
         max-height: 200px;
-        margin-bottom: 4px;
         max-width: 200px;
       }
     }
@@ -99,5 +111,9 @@
 
   &__text {
     margin: 0;
+    
+    @include breakpoint(md) {
+      text-align: center;
+    }
   }
 }
