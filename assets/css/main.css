@@ -226,9 +226,14 @@ body * {
     letter-spacing: 1px;
     line-height: 42px;
     text-transform: uppercase; }
+  .banner__join-us {
+    font-size: 16px;
+    margin-bottom: 8px;
+    opacity: 0.9; }
   .banner__hashtag {
-    text-transform: uppercase;
-    font-weight: 100; }
+    font-weight: 100;
+    margin: 0 0 48px;
+    text-transform: uppercase; }
 
 .intro {
   padding-bottom: 48px;
@@ -374,9 +379,13 @@ body * {
     display: block;
     margin: 0 auto; }
   .testimonials__hashtag {
+    color: #EAC419;
+    font-size: 16px;
     font-style: italic;
+    font-weight: 300;
     margin-bottom: 0;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
 
 .how {
   background: #F6F6F6;
@@ -404,7 +413,7 @@ body * {
   align-items: center;
   background: #ffffff;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 8px;
   min-height: 136px;
   padding: 8px; }
@@ -456,12 +465,27 @@ body * {
     color: #F0604B; }
   .challenge__text {
     color: #0A2C47; }
+    @media (min-width: 768px) {
+      .challenge__text {
+        width: 80%; } }
   .challenge__flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      .challenge__flex {
+        flex-direction: row; } }
+  .challenge__wrapper:nth-child(1) {
+    flex: 2; }
+  .challenge__wrapper:nth-child(2) {
+    align-self: center;
+    flex: 1;
+    margin-top: 32px; }
+    @media (min-width: 768px) {
+      .challenge__wrapper:nth-child(2) {
+        margin-top: 0; } }
   .challenge__image {
-    height: 216px;
-    width: 216px; }
+    height: 216px; }
   .challenge__button {
     background: #ffffff;
     border: 1px solid #E3E3E3;

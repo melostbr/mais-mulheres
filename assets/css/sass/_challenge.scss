@@ -4,24 +4,46 @@
 
   &__title {
     @extend %title;
-
     color: $burnt-sienna;
   }
 
   &__text {
     @extend %text;
-
     color: $downriver;
+    
+    @include breakpoint(md) {
+      width: 80%;
+    }
   }
 
   &__flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__wrapper {
+    &:nth-child(1) {
+      flex: 2;
+    }
+
+    &:nth-child(2) {
+      align-self: center;
+      flex: 1;
+      margin-top: 32px;
+
+      @include breakpoint(md) {
+        margin-top: 0;
+      }
+    }
   }
 
   &__image {
     height: 216px;
-    width: 216px;
   }
 
   &__button {
