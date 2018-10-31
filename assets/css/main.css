@@ -11,105 +11,17 @@
   line-height: 20px; }
 
 @font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondensedBold.otf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  font-family: "Futura Light";
+  src: url("../font/FuturaStd-Light.eot") format("eot"), url("../font/FuturaStd-Light.otf") format("otf"), url("../font/FuturaStd-Light.woff") format("woff"), url("../font/FuturaStd-Light.woff2") format("woff2"); }
 @font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-Medium.otf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
+  font-family: "Futura Bold Italic";
+  src: url("../font/FuturaStd-HeavyOblique.eot") format("eot"), url("../font/FuturaStd-HeavyOblique.otf") format("otf"), url("../font/FuturaStd-HeavyOblique.woff") format("woff"), url("../font/FuturaStd-HeavyOblique.woff2") format("woff2"); }
 @font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-MediumOblique.otf") format("truetype");
-  font-weight: 500;
-  font-style: italic; }
+  font-family: "Futura Book";
+  src: url("../font/FuturaStd-Book.eot") format("eot"), url("../font/FuturaStd-Book.otf") format("otf"), url("../font/FuturaStd-Book.woff") format("woff"), url("../font/FuturaStd-Book.woff2") format("woff2"); }
 @font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-ExtraBold.otf") format("truetype");
-  font-weight: 800;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-Condensed.otf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-BookOblique.otf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-Heavy.otf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondensedLight.otf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondExtraBoldObl.otf") format("truetype");
-  font-weight: 800;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondensedExtraBd.otf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-BoldOblique.otf") format("truetype");
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-HeavyOblique.otf") format("truetype");
-  font-weight: 900;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-ExtraBoldOblique.otf") format("truetype");
-  font-weight: 800;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-Book.otf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-LightOblique.otf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-Light.otf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondensedOblique.otf") format("truetype");
-  font-weight: 500;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondensedBoldObl.otf") format("truetype");
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-CondensedLightObl.otf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
-@font-face {
-  font-family: 'Futura Std';
-  src: url("../../font/FuturaStd-Bold.otf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
+  font-family: "Futura Medium";
+  src: url("../font/FuturaStd-Medium.eot") format("eot"), url("../font/FuturaStd-Medium.otf") format("otf"), url("../font/FuturaStd-Medium.woff") format("woff"), url("../font/FuturaStd-Medium.woff2") format("woff2"); }
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -126,7 +38,7 @@
       width: 1170px; } }
 
 body * {
-  font-family: "Futura", sans-serif; }
+  font-family: "Futura Book", sans-serif; }
 
 .twitter-button {
   background: #ffffff;
@@ -226,14 +138,13 @@ body * {
     letter-spacing: 1px;
     line-height: 42px;
     text-transform: uppercase; }
-  .banner__join-us {
-    font-size: 16px;
-    margin-bottom: 8px;
-    opacity: 0.9; }
+    .banner__title span {
+      display: block; }
   .banner__hashtag {
-    font-weight: 100;
-    margin: 0 0 48px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Futura Light";
+    display: block;
+    letter-spacing: 2px; }
 
 .intro {
   padding-bottom: 48px;
@@ -242,12 +153,30 @@ body * {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    max-width: 680px; }
+    max-width: 680px;
+    height: 280px; }
+    .intro__content::before {
+      content: '';
+      background: url("../img/curly-bracket.png") center no-repeat;
+      height: 100%;
+      width: 200px; }
+    .intro__content::after {
+      content: '';
+      background: url("../img/curly-bracket.png") center no-repeat;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      height: 100%;
+      width: 200px; }
   .intro__text {
     color: #4A4A4A;
     font-size: 16px;
+    margin: 0 15px;
     line-height: 20px;
     opacity: 0.9; }
+    .intro__text p {
+      font-family: "Futura Light"; }
   .intro__image {
     display: none; }
     @media (min-width: 768px) {
@@ -286,7 +215,7 @@ body * {
       display: none; }
       @media (min-width: 768px) {
         .numbers .header__item:nth-child(2) {
-          align-self: center;
+          padding: 20px 0;
           display: block;
           flex-grow: 1;
           flex-basis: 0; } }
@@ -297,27 +226,32 @@ body * {
         .numbers .header__title {
           text-align: right; } }
       .numbers .header__title--highlight {
+        font-family: "Futura Bold Italic";
+        font-style: italic;
         font-weight: 600;
-        font-style: italic; }
+        letter-spacing: 1px; }
     .numbers .header__text {
       color: #ffffff;
-      font-weight: 300;
+      font-family: "Futura Book";
       margin: 8px 0 0; }
       @media (min-width: 768px) {
         .numbers .header__text {
           text-align: right; } }
     .numbers .header__subtitle {
       color: #5E4698;
-      font-weight: 600;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      line-height: 1.5em; }
       .numbers .header__subtitle--highlight {
         color: #ffffff;
         display: block;
-        font-weight: 300; }
+        font-weight: 300;
+        font-family: "Futura Book"; }
     .numbers .header__hashtag {
       color: #ffffff;
-      margin: 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "Futura Light";
+      display: block;
+      letter-spacing: 2px; }
 
 .data {
   display: flex;
@@ -325,13 +259,20 @@ body * {
   justify-content: space-between;
   margin-top: 56px; }
   .data .info {
-    align-items: center;
+    justify-content: center;
     background: #ffffff;
     color: #4A4A4A;
+    font-family: "Futura Book";
     display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 260px;
-    padding: 14px; }
+    padding: 14px;
+    text-align: center;
+    text-decoration: none; }
+    .data .info span:first-child {
+      font-family: "Futura Book";
+      text-transform: uppercase; }
     .data .info:hover {
       background: #5E4698;
       color: #ffffff; }
@@ -340,12 +281,12 @@ body * {
     .data .info:not(:last-child) {
       margin-right: 8px; }
     .data .info__text {
-      text-align: center; }
+      color: inherit; }
     .data .info__highlight {
       color: #5E4698;
       display: block;
       font-size: 48px;
-      font-style: italic;
+      font-family: "Futura Bold Italic";
       font-weight: 600; }
 
 .testimonials {
@@ -395,12 +336,18 @@ body * {
     color: #7CA0D4; }
     .how__title--highlight {
       display: block;
+      font-family: "Futura Bold Italic";
       font-weight: 600;
-      font-style: italic; }
+      letter-spacing: 2px; }
   .how__text {
     max-width: 550px;
     margin: 48px auto 0;
-    text-align: center; }
+    text-align: center;
+    color: #5C5C5C;
+    font-size: 16px;
+    font-family: "Futura Book"; }
+    .how__text--highlight {
+      font-family: "Futura Book"; }
 
 .steps {
   display: flex;
@@ -462,7 +409,11 @@ body * {
         max-height: 200px;
         max-width: 200px; } }
   .step__text {
-    margin: 0; }
+    color: #5C5C5C;
+    opacity: 0.8;
+    font-size: 16px;
+    margin: 0;
+    font-family: "Futura Book"; }
     @media (min-width: 768px) {
       .step__text {
         text-align: center; } }
@@ -473,7 +424,8 @@ body * {
   .challenge__title {
     color: #F0604B; }
   .challenge__text {
-    color: #0A2C47; }
+    color: #0A2C47;
+    font-family: "Futura Book"; }
     @media (min-width: 768px) {
       .challenge__text {
         width: 80%; } }
@@ -495,14 +447,20 @@ body * {
         margin-top: 0; } }
   .challenge__image {
     height: 216px; }
-  .challenge__button {
+  .challenge__report-button {
     background: #ffffff;
     border: 1px solid #E3E3E3;
     border-radius: 32px;
     color: #F0604B;
     padding: 10px 22px;
-    transition: all 0.2s ease-in-out; }
-    .challenge__button:hover {
+    transition: all 0.2s ease-in-out;
+    padding: 10px 55px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Futura Book";
+    display: inline-block;
+    margin: 20px 0; }
+    .challenge__report-button:hover {
       background: #F0604B;
       border: 1px solid #F0604B;
       color: #ffffff;
@@ -586,7 +544,8 @@ body * {
   max-width: 500px; }
   .navigation a {
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
     .navigation a:hover {
       text-decoration: underline; }
 

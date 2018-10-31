@@ -21,7 +21,7 @@
         display: none;
 
         @include breakpoint(md) {
-          align-self: center;
+          padding: 20px 0;
           display: block;
           flex-grow: 1;
           flex-basis: 0;
@@ -39,15 +39,17 @@
       }
 
       &--highlight {
-        font-weight: 600;
+        font-family: "Futura Bold Italic";
         font-style: italic;
+        font-weight: 600;
+        letter-spacing: 1px;
       }
     }
 
     &__text {
       @extend %text;
       color: $white;
-      font-weight: 300;
+      font-family: "Futura Book";
       margin: 8px 0 0;
       
       @include breakpoint(md) {
@@ -58,20 +60,23 @@
     &__subtitle {
       @extend %title;
       color: $victoria;
-      font-weight: 600;
       margin-bottom: 0;
+      line-height: 1.5em;
 
       &--highlight {
         color: $white;
         display: block;
         font-weight: 300;
+        font-family: "Futura Book";
       }
     }
   
     &__hashtag {
       color: $white;
-      margin: 0;
       text-transform: uppercase;
+      font-family: "Futura Light";
+      display: block;
+      letter-spacing: 2px;
     }
   }
   
@@ -84,13 +89,24 @@
   margin-top: 56px;
   
   .info {
-    align-items: center;
+    justify-content: center;
     background: $white;
     color: #4A4A4A;
+    font-family: "Futura Book";
     display: flex;
+    flex-direction: column;
     flex: 1;
     min-height: 260px;
     padding: 14px;
+    text-align: center;
+    text-decoration: none;
+
+    & span{
+      &:first-child {
+        font-family: "Futura Book";
+        text-transform: uppercase;
+      }
+    }
 
     &:hover {
       background: $victoria;
@@ -106,14 +122,18 @@
     }
 
     &__text {
-      text-align: center;
+
+      color: inherit;
+
+
+
     }
 
     &__highlight {
       color: $victoria;
       display: block;
       font-size: 48px;
-      font-style: italic;
+      font-family: "Futura Bold Italic";
       font-weight: 600;
     }
   }
