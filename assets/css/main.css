@@ -10,18 +10,6 @@
   font-weight: 300;
   line-height: 20px; }
 
-@font-face {
-  font-family: "Futura Light";
-  src: url("../font/FuturaStd-Light.eot") format("eot"), url("../font/FuturaStd-Light.otf") format("otf"), url("../font/FuturaStd-Light.woff") format("woff"), url("../font/FuturaStd-Light.woff2") format("woff2"); }
-@font-face {
-  font-family: "Futura Bold Italic";
-  src: url("../font/FuturaStd-HeavyOblique.eot") format("eot"), url("../font/FuturaStd-HeavyOblique.otf") format("otf"), url("../font/FuturaStd-HeavyOblique.woff") format("woff"), url("../font/FuturaStd-HeavyOblique.woff2") format("woff2"); }
-@font-face {
-  font-family: "Futura Book";
-  src: url("../font/FuturaStd-Book.eot") format("eot"), url("../font/FuturaStd-Book.otf") format("otf"), url("../font/FuturaStd-Book.woff") format("woff"), url("../font/FuturaStd-Book.woff2") format("woff2"); }
-@font-face {
-  font-family: "Futura Medium";
-  src: url("../font/FuturaStd-Medium.eot") format("eot"), url("../font/FuturaStd-Medium.otf") format("otf"), url("../font/FuturaStd-Medium.woff") format("woff"), url("../font/FuturaStd-Medium.woff2") format("woff2"); }
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -37,8 +25,24 @@
     .container {
       width: 1170px; } }
 
+@font-face {
+  font-family: "Futura Light";
+  src: url("../font/FuturaStd-Light.eot") format("eot"), url("../font/FuturaStd-Light.otf") format("otf"), url("../font/FuturaStd-Light.woff") format("woff"), url("../font/FuturaStd-Light.woff2") format("woff2"); }
+@font-face {
+  font-family: "Futura Bold Italic";
+  src: url("../font/FuturaStd-HeavyOblique.eot") format("eot"), url("../font/FuturaStd-HeavyOblique.otf") format("otf"), url("../font/FuturaStd-HeavyOblique.woff") format("woff"), url("../font/FuturaStd-HeavyOblique.woff2") format("woff2"); }
+@font-face {
+  font-family: "Futura Book";
+  src: url("../font/FuturaStd-Book.eot") format("eot"), url("../font/FuturaStd-Book.otf") format("otf"), url("../font/FuturaStd-Book.woff") format("woff"), url("../font/FuturaStd-Book.woff2") format("woff2"); }
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../font/FuturaStd-Medium.eot") format("eot"), url("../font/FuturaStd-Medium.otf") format("otf"), url("../font/FuturaStd-Medium.woff") format("woff"), url("../font/FuturaStd-Medium.woff2") format("woff2"); }
 body * {
   font-family: "Futura Book", sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0; }
 
 .twitter-button {
   background: #ffffff;
@@ -140,11 +144,16 @@ body * {
     text-transform: uppercase; }
     .banner__title span {
       display: block; }
+  .banner__join-us {
+    font-size: 16px;
+    margin-bottom: 8px;
+    opacity: 0.9; }
   .banner__hashtag {
-    text-transform: uppercase;
-    font-family: "Futura Light";
     display: block;
-    letter-spacing: 2px; }
+    font-family: "Futura Light";
+    letter-spacing: 2px;
+    margin: 0 0 48px;
+    text-transform: uppercase; }
 
 .intro {
   padding-bottom: 48px;
@@ -316,6 +325,8 @@ body * {
     @media (min-width: 768px) {
       .testimonials__title br {
         display: block; } }
+  .testimonials__carousel {
+    overflow: hidden; }
   .testimonials__image {
     display: block;
     margin: 0 auto;
