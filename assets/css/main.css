@@ -307,6 +307,16 @@ body {
       font-family: "Futura Bold Italic";
       font-weight: 600; }
 
+.carousel-item {
+  margin: 0 auto;
+  max-width: 370px;
+  text-align: center; }
+  .carousel-item .testimonial {
+    font-family: "Futura Light";
+    line-height: 21px; }
+  .carousel-item .author {
+    color: #EAC419; }
+
 .testimonials {
   padding: 40px 0; }
   .testimonials__flex {
