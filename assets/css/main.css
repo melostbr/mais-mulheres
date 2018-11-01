@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   font-size: 18px;
   padding-left: 48px;
+  text-align: center;
   text-decoration: none;
   width: 100%; }
   .twitter-button:hover {
@@ -84,8 +85,9 @@ body {
   font-size: 18px;
   margin-bottom: 24px;
   padding-left: 44px;
-  width: 100%;
-  text-decoration: none; }
+  text-align: center;
+  text-decoration: none;
+  width: 100%; }
   .facebook-button:hover {
     background: #3B5998;
     border: 1px solid #3B5998;
@@ -177,6 +179,13 @@ body {
     letter-spacing: 2px;
     margin: 0 0 48px;
     text-transform: uppercase; }
+  .banner__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .banner__buttons {
+        flex-direction: row; } }
 
 .intro {
   padding-bottom: 48px;
