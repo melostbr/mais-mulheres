@@ -47,6 +47,10 @@
     }
   }
 
+  &__carousel {
+    overflow: hidden;
+  }
+
   &__image {
     display: block;
     margin: 0 auto;
