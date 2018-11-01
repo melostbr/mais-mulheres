@@ -137,13 +137,32 @@ body {
     @media (min-width: 768px) {
       .banner__headline {
         margin-top: 0; } }
-  .banner__title {
+  .banner__title h1 {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 42px;
-    text-transform: uppercase; }
-    .banner__title span {
-      display: block; }
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0; }
+  .banner__title span {
+    display: block; }
+  .banner__title::before {
+    content: '';
+    background: url("../img/curly_bracket_red.png") center/contain no-repeat;
+    display: inline-block;
+    height: 100px;
+    width: 45px; }
+  .banner__title::after {
+    content: '';
+    background: url("../img/curly_bracket_red.png") center/contain no-repeat;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: inline-block;
+    height: 100px;
+    width: 45px; }
   .banner__join-us {
     font-size: 16px;
     margin-bottom: 8px;
