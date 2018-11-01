@@ -36,12 +36,15 @@ body {
   margin-bottom: 24px;
   padding-left: 44px;
   width: 100%;
+  text-decoration: none;
 
   @include breakpoint(md) {
     margin-bottom: 0;
     margin-right: 16px;
     width: auto;
+    text-decoration: none;
   }
+
 
   &:hover {
     background-image: url('../img/icons/icn-facebook-white.svg');

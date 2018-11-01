@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,11 @@
   <meta name="description" content="Site da campanha Mais Mulheres na Tecnologia, que tem o objetivo de incentivar o compartilhamento de mensagens que dão visibilidade à luta pela igualdade de gênero na área, mostrando desafios e celebrando conquistas.">
   <meta name="keywords" content="mulheres, tecnologia, diversidade, campanha, programação, gênero, desigualdade, programaria">
 
-  <meta property="og:url"                content="https://maismulheresnatecnologia.org" />
-  <meta property="og:type"               content="article" />
-  <meta property="og:title"              content="Vamos juntas e vamos em frente" />
-  <meta property="og:description"        content="Participe da campanha compartilhando sua mensagem usando a hashtag #MaisMulheresnaTecnologia" />
-  <meta property="og:image"              content="https://maismulheresnatecnologia.org/assets/img/img_header.png" />
+  <meta property="og:url" content="https://maismulheresnatecnologia.org" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Vamos juntas e vamos em frente" />
+  <meta property="og:description" content="Participe da campanha compartilhando sua mensagem usando a hashtag #MaisMulheresnaTecnologia" />
+  <meta property="og:image" content="https://maismulheresnatecnologia.org/assets/img/maismulheresnatecnologia.jpeg" />
 
   <title>Mais Mulheres na Tecnologia</title>
 
@@ -22,16 +23,31 @@
   <link rel="stylesheet" href="assets/css/lib/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
 
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128362609-1"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-128362609-1');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128362609-1');
   </script>
 </head>
+
 <body>
 
   <header class="main">
@@ -42,14 +58,13 @@
           <img class="banner__image" src="assets/img/img_header.png" alt="Desenho de uma mulher de cabelo rosa utilizando um notebook">
         </div>
         <div class="banner__headline">
-          <h1 class="banner__title">Vamos juntas <span>vamos em frente</span></h1>
+          <div class="banner__title">
+            <h1>Vamos juntas e<span>vamos em frente</span></h1>
+          </div>
           <p class="banner__join-us">Participe da campanha por:<span class="banner__hashtag">#MaisMulheresNaTecnologia</span></p>
-          <button class="facebook-button">
-            Participe no Facebook
-          </button>
-          <button class="twitter-button">
-            Participe no Twitter
-          </button>
+
+          <a class="facebook-button" data-href="http://maismulheresnatecnologia.org" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmaismulheresnatecnologia.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Participe no Facebook</a>
+          <a class="twitter-button" href="https://twitter.com/intent/tweet?text=Vamos%20juntas%20e%20vamos%20em%20frente!%20Saiba%20mais%20em%20mulheresnatecnologia.org%20%23MaisMulheresNaTecnologia%20%40PrograMaria" data-size="large" data-text="Vamos juntas e vamos em frente! Saiba mais em mulheresnatecnologia.org #MaisMulheresNaTecnologia @PrograMaria">Participe no Twitter</a>
         </div>
       </div>
     </div>
@@ -59,18 +74,15 @@
     <div class="container">
       <div class="intro__content">
         <div class="intro__text">
-          <p>A história das mulheres sempre foi marcada por <strong>luta e resistência</strong>. Foi assim que conquistamos direitos e ocupamos espaços em que historicamente éramos minoria. Na tecnologia, o caminho ainda é longo: há uma narrativa cultural que afasta as mulheres. Falta incentivo e apoio e sobram barreiras e preconceitos. Quando falamos de mulheres trans, negras, indígenas, LGBTQ+ e periféricas, o desafio é ainda maior.</p>
+          <p>A história das mulheres sempre foi marcada por <strong>luta e resistência</strong>. Foi assim que conquistamos direitos e ocupamos espaços em que historicamente éramos minoria. Na tecnologia, o caminho ainda é longo: há uma narrativa cultural
+            que afasta as mulheres. Falta incentivo e apoio e sobram barreiras e preconceitos. Quando falamos de mulheres trans, negras, indígenas, LGBTQ+ e periféricas, o desafio é ainda maior.</p>
           <p>A campanha <strong>#MaisMulheresNaTecnologia</strong> tem o objetivo de dar visibilidade à luta pela igualdade de gênero na área, mostrando nossos desafios e celebrando nossas conquistas.</p>
           <p>Por isso, convidamos mulheres e homens a juntarem-se a nós nesse movimento por <strong>#MaisMulheresNaTecnologia</strong></p>
         </div>
       </div>
       <div class="intro__buttons">
-        <button type="button" class="facebook-button">
-          Participe no Facebook
-        </button>
-        <button type="button" class="twitter-button">
-            Participe no Twitter
-          </button>
+        <a class="facebook-button" data-href="http://maismulheresnatecnologia.org" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmaismulheresnatecnologia.org%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Participe no Facebook</a>
+        <a class="twitter-button" href="https://twitter.com/intent/tweet?text=Vamos%20juntas%20e%20vamos%20em%20frente!%20Saiba%20mais%20em%20mulheresnatecnologia.org%20%23MaisMulheresNaTecnologia%20%40PrograMaria" data-size="large" data-text="Vamos juntas e vamos em frente! Saiba mais em mulheresnatecnologia.org #MaisMulheresNaTecnologia @PrograMaria">Participe no Twitter</a>
       </div>
     </div>
   </section>
@@ -80,7 +92,8 @@
       <div class="header">
         <div class="header__item">
           <h2 class="header__title">alguns <span class="header__title--highlight">números</span></h2>
-          <p class="header__text">Até 2020, faltarão 408 mil profissionais de TI no Brasil segundo estudo da Softex. Precisamos atrair, reter e desenvolver mulheres no mercado de tecnologia para fechar essa conta. A presença feminina, além de resolver a falta de mão de obra, é fundamental para que as soluções tecnológicas sejam produzidas por grupos diversos. Com isso, ganham todos, uma vez que olhares e experiências múltiplos garantem maior variedade de soluções para atender necessidades diferentes.</p>
+          <p class="header__text">Até 2020, faltarão 408 mil profissionais de TI no Brasil segundo estudo da Softex. Precisamos atrair, reter e desenvolver mulheres no mercado de tecnologia para fechar essa conta. A presença feminina, além de resolver a falta de mão de obra,
+            é fundamental para que as soluções tecnológicas sejam produzidas por grupos diversos. Com isso, ganham todos, uma vez que olhares e experiências múltiplos garantem maior variedade de soluções para atender necessidades diferentes.</p>
         </div>
         <div class="header__item">
           <h3 class="header__subtitle"><span class="header__subtitle--highlight">Diversidade</span> importa!</h3>
@@ -94,7 +107,7 @@
           <span class="info__highlight">17%</span>
           no mercado brasileiro de TI. (Fonte: PNAD)
         </a>
-        <a href="https://www.programaria.org/mulheres-perderam-representatividade-nos-cursos-de-computacao-2/"class="info">
+        <a href="https://www.programaria.org/mulheres-perderam-representatividade-nos-cursos-de-computacao-2/" class="info">
           <span>apenas</span>
           <span class="info__highlight">15%</span>
           dos matriculados em cursos relacionados à programação são mulheres.(Fonte: Inep/MEC)
@@ -117,7 +130,7 @@
       <div class="testimonials__flex">
         <h2 class="testimonials__title">
           <span class="testimonials__title--blue">
-            Eu apoio<br> 
+            Eu apoio<br>
           </span>
           <span class="testimonials__title--gold">
             mais <br>mulheres
@@ -166,7 +179,7 @@
         <h2 class="testimonials__title">
           <strong>
             <span class="testimonials__title--blue">
-              na<br> 
+              na<br>
             </span>
             <span class="testimonials__title--gold">
               tecnologia
@@ -186,15 +199,15 @@
       </h2>
       <div class="steps">
         <div class="step">
-          <img class="step__image step__image--computer" src="assets/img/computer.png" alt="">
+          <img class="step__image step__image--computer" src="assets/img/computer.png" alt="Imagem de um monitor e uma mão clicando em um mouse">
           <p class="step__text">Poste nas suas redes sociais uma mensagem usando a hashtag #MaisMulheresNaTecnologia e a frase “Vamos juntas e vamos em frente!”.</p>
         </div>
         <div class="step">
-          <img class="step__image step__image--at" src="assets/img/at.png" alt="">
+          <img class="step__image step__image--at" src="assets/img/at.png" alt="Simbolo 'at' usado para representar redes sociais">
           <p class="step__text">Marque as redes sociais da @programaria.</p>
         </div>
         <div class="step">
-          <img class="step__image step__image--girl" src="assets/img/Menina03.png" alt="">
+          <img class="step__image step__image--girl" src="assets/img/Menina03.png" alt="Imagem de uma mulher mexendo no computador">
           <p class="step__text">Chame sua rede para participar, desafiando três pessoas para entrar na campanha.</p>
         </div>
       </div>
@@ -207,14 +220,13 @@
       <div class="challenge__flex">
         <div class="challenge__wrapper">
           <h2 class="challenge__title">Desafios</h2>
-            <p class="challenge__text">Esta campanha tem o propósito de trazer à tona os muitos desafios de ser mulher na tecnologia. O ambiente de tecnologia muitas vezes é hostil às mulheres. Infelizmente, são comuns os relatos de situações de preconceito e mesmo de assédio moral e sexual. Saiba mais no especial <a href="https://www.programaria.org/especiais/mulheres-tecnologia/">Os desafios das mulheres na tecnologia.</a></p>
-            <p class="challenge__text">Se você, ou alguém conhecido, está vivendo alguma situação de assédio, não se cale. Estamos aqui para te apoiar, e você pode dar o primeiro passo.</p>
-
+          <p class="challenge__text">Esta campanha tem o propósito de trazer à tona os muitos desafios de ser mulher na tecnologia. O ambiente de tecnologia muitas vezes é hostil às mulheres. Infelizmente, são comuns os relatos de situações de preconceito e mesmo de assédio moral
+            e sexual. Saiba mais no especial <a href="https://www.programaria.org/especiais/mulheres-tecnologia/">Os desafios das mulheres na tecnologia.</a></p>
+          <p class="challenge__text">Se você, ou alguém conhecido, está vivendo alguma situação de assédio, não se cale. Estamos aqui para te apoiar, e você pode dar o primeiro passo.</p>
           <a href="http://portal.mpt.mp.br/wps/portal/portal_mpt/mpt/servicos/coleta+de+denuncias" class="challenge__report-button">Denuncie!</a>
-
         </div>
         <div class="challenge__wrapper">
-          <img class="challenge__image" src="assets/img/Menina02.png" alt="">
+          <img class="challenge__image" src="assets/img/Menina02.png" alt="Menina programando em notebook">
         </div>
       </div>
     </div>
@@ -235,26 +247,39 @@
     <div class="container">
       <h2 class="support__title">Apoio</h2>
       <div class="support__wrapper">
-        <img class="support__logo" src="assets/img/logos/patrocina_1.png" alt="Logo do Delete Seu Preconceito">
-        <img class="support__logo" src="assets/img/logos/patrocina_2.png" alt="Logo da Chicas Poderosas">
-        <img class="support__logo" src="assets/img/logos/patrocina_3.png" alt="Logo da Women Up">
-        <img class="support__logo" src="assets/img/logos/patrocina_4.png" alt="Logo da Elas Programam">
-        <img class="support__logo" src="assets/img/logos/patrocina_5.png" alt="Logo da Mulheres na Computação">
-        <img class="support__logo" src="assets/img/logos/patrocina_6.png" alt="Logo da Reprograma">
-        <img class="support__logo" src="assets/img/logos/patrocina_7.png" alt="Logo da Anitas Mulheres na Tecnologia">
-        <img class="support__logo" src="assets/img/logos/patrocina_8.png" alt="Logo da Meninas Digitais">
-        <img class="support__logo" src="assets/img/logos/patrocina_9.png" alt="Logo da Meninas Digitais no Cerrado">
-        <img class="support__logo" src="assets/img/logos/patrocina_10.png" alt="Logo da Rails Girls">
-        <img class="support__logo" src="assets/img/logos/patrocina_11.png" alt="Logo da Womakers Code">
-        <img class="support__logo" src="assets/img/logos/patrocina_12.png" alt="Logo da Women Techmakers">
+        <a href="https://ada.vc/" class="support__logo support__icon-ada_vc">Ada.vc</a>
+        <a href="http://anitas.com.br/" class="support__logo support__icon-anitas">Anitas</a>
+        <a href="https://chicaspoderosas.org/pt/" class="support__logo support__icon-chicas_poderosas">Chicas Poderosas</a>
+        <a href="https://www.codamos.club/" class="support__logo
+support__icon-codamos">Codamos</a>
+        <a href="https://www.facebook.com/deleteseupreconceito/" class="support__logo support__icon-delete_seu_preconceito">Delete Seu Preconceito</a>
+        <a href="http://desprograme.com.br/pt/" class="support__logo support__icon-desprograme">Deprograme</a>
+        <a href="https://www.facebook.com/groups/elasprogramam/?fref=nf" class="support__logo support__icon-elas_programam">Elas Programam</a>
+        <a href="https://www.facebook.com/elasintech/" class="support__logo support__icon-elas_in_tech">Elas In Tech</a>
+        <a href="http://frmeninas.com.br/" class="support__logo support__icon-forca_meninas">Força Meninas</a>
+        <a href="https://marialab.org/" class="support__logo support__icon-marialab">Maria Lab</a>
+        <a href="http://meninas.sbc.org.br/" class="support__logo support__icon-meninas_digitais">Meninas Digitais</a>
+        <a href="http://meninas.sbc.org.br/index.php/portfolio/meninas-digitais-no-cerrado/" class="support__logo support__icon-meninas_digitais_no_cerrado">Meninas Digitais No Cerrado</a>
+        <a href="https://mulheresnacomputacao.com/" class="support__logo support__icon-mulheres_na_computacao">Mulheres Na Computação</a>
+        <a href="https://www.olabi.org.br/" class="support__logo support__icon-olabi">Olabi</a>
+        <a href="https://www.facebook.com/politecnicas.r.existem/" class="support__logo support__icon-politecnicas_r_existem">Politécnicas R.existem</a>
+        <a href="https://www.meetup.com/pt-BR/PyLadiesSP/" class="support__logo support__icon-pyladies_sao_paulo">PyLadies São Paulo</a>
+        <a href="http://railsgirls.com/" class="support__logo support__icon-rails_girls">Rails Girls</a>
+        <a href="https://reprograma.com.br/" class="support__logo support__icon-reprograma">Reprograma</a>
+        <a href="https://www.facebook.com/groups/ONGunidos/" class="support__logo support__icon-unidos_somos_mais">Unidos Somos Mais</a>
+        <a href="https://upwit.org/" class="support__logo support__icon-upwit">Upwit</a>
+        <a href="http://wtmsp.org/" class="support__logo support__icon-women_techmakers">Women Techmakers SP</a>
+        <a href="https://www.facebook.com/womenupgames/" class="support__logo support__icon-women_up">Women Up Games</a>
+        <a href="http://womakerscode.org/" class="support__logo support__icon-womakers_code">Womakerscode</a>
       </div>
     </div>
   </section>
-  
+
   <footer class="footer">
     <div class="container">
       <img class="footer__logo" src="assets/img/logo-programaria-grande.svg" alt="Logo da Programaria">
-      <p class="footer__text">Fundada em 2015, a PrograMaria começou como um grupo de mulheres que desejava aprender a programar. Hoje, é uma empresa que empodera outras mulheres por meio da tecnologia. A iniciativa oferece eventos, oficinas e cursos de programação, que ajudam empresas do setor a promover a diversidade e recrutar mais mulheres.</p>
+      <p class="footer__text">Fundada em 2015, a PrograMaria começou como um grupo de mulheres que desejava aprender a programar. Hoje, é uma empresa que empodera outras mulheres por meio da tecnologia. A iniciativa oferece eventos, oficinas e cursos de programação, que ajudam
+        empresas do setor a promover a diversidade e recrutar mais mulheres.</p>
 
       <p class="footer__partner">
         <a href="mailto:helloworld@programaria.org">Quer ser uma empresa parceira?</a>
@@ -272,7 +297,10 @@
         </a>
         <a href="https://www.linkedin.com/company/programaria.org/">
           <img src="assets/img/icons/icn-linkedin-white.svg" alt="Ícone do LinkedIn">
-        </a> 
+        </a>
+        <a href="https://www.instagram.com/programaria/">
+          <img src="assets/img/icons/icn-instagram-white.svg" alt="Ícone do Instagram">
+        </a>
       </div>
 
       <hr class="footer__rule">
@@ -280,7 +308,6 @@
       <div class="navigation">
         <a href="https://www.programaria.org">Saiba mais</a>
         <a href="mail to: helloworld@programaria.org">Entre em contato</a>
-        <a href="#">Site Parceiro</a>
       </div>
 
       <p class="footer__copyright">
@@ -289,11 +316,9 @@
     </div>
   </footer>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/lib/owl.carousel.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>
