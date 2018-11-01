@@ -83,7 +83,8 @@ body {
   font-size: 18px;
   margin-bottom: 24px;
   padding-left: 44px;
-  width: 100%; }
+  width: 100%;
+  text-decoration: none; }
   .facebook-button:hover {
     background: #3B5998;
     border: 1px solid #3B5998;
@@ -93,7 +94,8 @@ body {
     .facebook-button {
       margin-bottom: 0;
       margin-right: 16px;
-      width: auto; } }
+      width: auto;
+      text-decoration: none; } }
   .facebook-button:hover {
     background-image: url("../img/icons/icn-facebook-white.svg");
     background-position: left 28px top 12px;
@@ -137,13 +139,32 @@ body {
     @media (min-width: 768px) {
       .banner__headline {
         margin-top: 0; } }
-  .banner__title {
+  .banner__title h1 {
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 42px;
-    text-transform: uppercase; }
-    .banner__title span {
-      display: block; }
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0; }
+  .banner__title span {
+    display: block; }
+  .banner__title::before {
+    content: '';
+    background: url("../img/curly_bracket_red.png") center/contain no-repeat;
+    display: inline-block;
+    height: 100px;
+    width: 45px; }
+  .banner__title::after {
+    content: '';
+    background: url("../img/curly_bracket_red.png") center/contain no-repeat;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: inline-block;
+    height: 100px;
+    width: 45px; }
   .banner__join-us {
     font-size: 16px;
     margin-bottom: 8px;
@@ -530,8 +551,102 @@ body {
         flex-wrap: wrap;
         justify-content: center; } }
   .support__logo {
-    margin: 36px 24px 24px 0;
-    max-height: 60px; }
+    display: block;
+    height: 80px;
+    width: 200px;
+    margin: 15px; }
+  .support__icon-ada_vc {
+    background: url("../img/logos/ada_vc.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-anitas {
+    background: url("../img/logos/anitas.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-chicas_poderosas {
+    background: url("../img/logos/chicas_poderosas.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-codamos {
+    background: url("../img/logos/codamos.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-delete_seu_preconceito {
+    background: url("../img/logos/delete_seu_preconceito.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-desprograme {
+    background: url("../img/logos/desprograme.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-elas_in_tech {
+    background: url("../img/logos/elas_in_tech.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-elas_programam {
+    background: url("../img/logos/elas_programam.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-forca_meninas {
+    background: url("../img/logos/forca_meninas.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-marialab {
+    background: url("../img/logos/marialab.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-meninas_digitais {
+    background: url("../img/logos/meninas_digitais.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-meninas_digitais_no_cerrado {
+    background: url("../img/logos/meninas_digitais_no_cerrado.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-mulheres_na_computacao {
+    background: url("../img/logos/mulheres_na_computacao.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-olabi {
+    background: url("../img/logos/olabi.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-politecnicas_r_existem {
+    background: url("../img/logos/politecnicas_r_existem.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-pyladies_sao_paulo {
+    background: url("../img/logos/pyladies_sao_paulo.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-rails_girls {
+    background: url("../img/logos/rails_girls.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-reprograma {
+    background: url("../img/logos/reprograma.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-unidos_somos_mais {
+    background: url("../img/logos/unidos_somos_mais.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-upwit {
+    background: url("../img/logos/upwit.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-women_techmakers {
+    background: url("../img/logos/women_techmakers.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-women_up {
+    background: url("../img/logos/women_up.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-womakers_code {
+    background: url("../img/logos/womakers_code.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
 
 .footer {
   background: #5E4698;
@@ -571,7 +686,7 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 32px auto 0;
   max-width: 500px; }
   .navigation a {

@@ -1,3 +1,30 @@
+$partners: (
+ada_vc,
+anitas,
+chicas_poderosas,
+codamos,
+delete_seu_preconceito,
+desprograme,
+elas_in_tech,
+elas_programam,
+forca_meninas,
+marialab,
+meninas_digitais,
+meninas_digitais_no_cerrado,
+mulheres_na_computacao,
+olabi,
+politecnicas_r_existem,
+pyladies_sao_paulo,
+rails_girls,
+reprograma,
+unidos_somos_mais,
+upwit,
+women_techmakers,
+women_up,
+womakers_code,
+);
+
+
 .support {
   padding: 40px 0 72px;
 
@@ -11,7 +38,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+
     @include breakpoint(sm) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -20,7 +47,17 @@
   }
 
   &__logo {
-    margin: 36px 24px 24px 0;
-    max-height: 60px;
+    display: block;
+    height: 80px;
+    width: 200px;
+    margin: 15px;
+  }
+
+  @each $partner in $partners {
+    &__icon-#{$partner}{
+      background: url('../img/logos/#{$partner}.png') no-repeat center;
+      background-size: contain;
+      font-size: 0;
+    }
   }
 }
