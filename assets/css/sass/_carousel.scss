@@ -1,11 +1,14 @@
 .carousel-item {
-  margin: 0 auto;
-  max-width: 370px;
   text-align: center;
-
+  
   .testimonial {
     font-family: "Futura Light";
     line-height: 21px;
+    
+    @include breakpoint(sm) {
+      margin: 0 auto;
+      max-width: 370px;
+    }
   }
 
   .author {
