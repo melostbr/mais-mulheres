@@ -10,10 +10,11 @@ body {
 .twitter-button {
   @include btn-style($white, $cerulean, 1px solid $mercury);
   background-image: url('../img/icons/icn-twitter.svg');
-  background-position: left 22px top 15px;
+  background-position: left 22px top 10px;
   background-repeat: no-repeat;
   font-size: 18px;
   padding-left: 48px;
+  text-decoration: none;
   width: 100%;
   
   @include breakpoint(md) {
@@ -30,7 +31,7 @@ body {
 .facebook-button {
   @include btn-style($white, $chambray, 1px solid $mercury);
   background-image: url('../img/icons/icn-facebook.svg');
-  background-position: left 28px top 12px;;
+  background-position: left 28px top 9px;;
   background-repeat: no-repeat;
   font-size: 18px;
   margin-bottom: 24px;

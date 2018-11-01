@@ -52,10 +52,11 @@ body {
   padding: 10px 22px;
   transition: all 0.2s ease-in-out;
   background-image: url("../img/icons/icn-twitter.svg");
-  background-position: left 22px top 15px;
+  background-position: left 22px top 10px;
   background-repeat: no-repeat;
   font-size: 18px;
   padding-left: 48px;
+  text-decoration: none;
   width: 100%; }
   .twitter-button:hover {
     background: #00ACED;
@@ -78,7 +79,7 @@ body {
   padding: 10px 22px;
   transition: all 0.2s ease-in-out;
   background-image: url("../img/icons/icn-facebook.svg");
-  background-position: left 28px top 12px;
+  background-position: left 28px top 9px;
   background-repeat: no-repeat;
   font-size: 18px;
   margin-bottom: 24px;
@@ -168,7 +169,8 @@ body {
   .banner__join-us {
     font-size: 16px;
     margin-bottom: 8px;
-    opacity: 0.9; }
+    opacity: 0.9;
+    padding-left: 3.5em; }
   .banner__hashtag {
     display: block;
     font-family: "Futura Light";
@@ -329,12 +331,14 @@ body {
       font-weight: 600; }
 
 .carousel-item {
-  margin: 0 auto;
-  max-width: 370px;
   text-align: center; }
   .carousel-item .testimonial {
     font-family: "Futura Light";
     line-height: 21px; }
+    @media (min-width: 576px) {
+      .carousel-item .testimonial {
+        margin: 0 auto;
+        max-width: 370px; } }
   .carousel-item .author {
     color: #EAC419; }
 
@@ -369,7 +373,7 @@ body {
     overflow: hidden; }
   .testimonials__image {
     display: block;
-    margin: 0 auto;
+    margin: 32px auto 0;
     max-height: 160px; }
   .testimonials__hashtag {
     color: #EAC419;
