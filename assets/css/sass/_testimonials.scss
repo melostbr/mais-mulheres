@@ -48,7 +48,12 @@
   }
 
   &__carousel {
+    margin: 24px 0;
     overflow: hidden;
+
+    @include breakpoint(md) {
+      margin: 0 24px;
+    }
   }
 
   &__image {
