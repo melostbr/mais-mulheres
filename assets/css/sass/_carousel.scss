@@ -6,6 +6,13 @@
   @include breakpoint(lg) {
     max-width: 650px;
   }
+
+  &__prev,
+  &__next {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
 }
 
 .carousel-item {

@@ -3,8 +3,8 @@ $('.carousel').slick({
   slidesToShow: 1,
   autoplay: true,
   autoplaySpeed: 7000,
-  prevArrow: '<button>oi</button>',
-  nextArrow: '<button>tchau</button>',
+  prevArrow: '<button class="carousel__prev"><</button>',
+  nextArrow: '<button class="carousel__next">></button>',
   responsive: [
     {
       breakpoint: 576,
