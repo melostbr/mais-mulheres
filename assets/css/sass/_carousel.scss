@@ -1,5 +1,11 @@
 .carousel {
+  align-items: center;
+  display: flex !important; //sobrescreve o Slick
   max-width: 500px;
+  
+  @include breakpoint(lg) {
+    max-width: 650px;
+  }
 }
 
 .carousel-item {

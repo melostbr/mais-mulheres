@@ -40,7 +40,7 @@
   src: url("../font/FuturaStd-Medium.eot") format("eot"), url("../font/FuturaStd-Medium.otf") format("otf"), url("../font/FuturaStd-Medium.woff") format("woff"), url("../font/FuturaStd-Medium.woff2") format("woff2"); }
 @font-face {
   font-family: "slick";
-  src: url("../font/slick.eot") format("eot"), url("../font/slick.woff") format("woff"); }
+  src: url("../font/slick.eot") format("eot"), url("../font/slick.woff") format("woff"), url("../font/slick.ttf") format("ttf"); }
 body * {
   font-family: "Futura Book", sans-serif; }
 
@@ -349,7 +349,12 @@ body {
       font-weight: 600; }
 
 .carousel {
+  align-items: center;
+  display: flex !important;
   max-width: 500px; }
+  @media (min-width: 992px) {
+    .carousel {
+      max-width: 650px; } }
 
 .carousel-item {
   text-align: center; }
@@ -800,17 +805,6 @@ body {
 .slick-arrow.slick-hidden {
   display: none; }
 
-/* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
-
-/* Icons */
-@font-face {
-  font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -848,7 +842,7 @@ body {
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
-    color: white;
+    color: black;
     opacity: 0.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
