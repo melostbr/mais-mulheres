@@ -38,6 +38,9 @@
 @font-face {
   font-family: "Futura Medium";
   src: url("../font/FuturaStd-Medium.eot") format("eot"), url("../font/FuturaStd-Medium.otf") format("otf"), url("../font/FuturaStd-Medium.woff") format("woff"), url("../font/FuturaStd-Medium.woff2") format("woff2"); }
+@font-face {
+  font-family: "slick";
+  src: url("../font/slick.eot") format("eot"), url("../font/slick.woff") format("woff"); }
 body * {
   font-family: "Futura Book", sans-serif; }
 

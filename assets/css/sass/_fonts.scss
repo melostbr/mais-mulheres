@@ -5,6 +5,7 @@
        url('../font/FuturaStd-Light.woff') format('woff'),
        url('../font/FuturaStd-Light.woff2') format('woff2');
 }
+
 @font-face {
   font-family: "Futura Bold Italic";
   src: url('../font/FuturaStd-HeavyOblique.eot') format('eot'),
@@ -12,6 +13,7 @@
   url('../font/FuturaStd-HeavyOblique.woff') format('woff'),
   url('../font/FuturaStd-HeavyOblique.woff2') format('woff2');
 }
+
 @font-face {
   font-family: "Futura Book";
   src: url('../font/FuturaStd-Book.eot') format('eot'),
@@ -19,6 +21,7 @@
   url('../font/FuturaStd-Book.woff') format('woff'),
   url('../font/FuturaStd-Book.woff2') format('woff2');
 }
+
 @font-face {
   font-family: "Futura Medium";
   src: url('../font/FuturaStd-Medium.eot') format('eot'),
@@ -26,3 +29,10 @@
   url('../font/FuturaStd-Medium.woff') format('woff'),
   url('../font/FuturaStd-Medium.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: "slick";
+  src: url('../font/slick.eot') format('eot'),
+  url('../font/slick.woff') format('woff')
+}
+
