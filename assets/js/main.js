@@ -1,8 +1,6 @@
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    autoPlay: true,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: true,
-    items: 1
-  })
+$('.carousel').slick({
+  dots: true,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 7000,
 });
