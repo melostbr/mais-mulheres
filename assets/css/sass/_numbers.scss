@@ -3,15 +3,15 @@
   padding: 42px 0;
 
   .header {
-    display: flex;
     align-items: stretch;
+    display: flex;
   
     &__item {
       &:nth-child(1) {        
         @include breakpoint(md) {
           border-right: 3px solid $victoria;
-          flex-grow: 1;
           flex-basis: 0;
+          flex-grow: 1;
           margin-right: 32px;
           padding-right: 32px;
         }
@@ -21,10 +21,11 @@
         display: none;
 
         @include breakpoint(md) {
-          padding: 20px 0;
+          align-self: center;
           display: block;
-          flex-grow: 1;
           flex-basis: 0;
+          flex-grow: 1;
+          padding: 20px 0;
         }
       }
     }
