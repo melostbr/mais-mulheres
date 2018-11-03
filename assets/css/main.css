@@ -376,7 +376,7 @@ body {
     @media (min-width: 576px) {
       .carousel-item .testimonial {
         margin: 0 auto;
-        max-width: 370px; } }
+        max-width: 450px; } }
   .carousel-item .author {
     color: #EAC419; }
 
