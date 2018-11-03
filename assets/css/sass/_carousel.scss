@@ -11,7 +11,16 @@
   &__next {
     border: 0;
     background: transparent;
+    background-image: url('../img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;
+    display: block;
+    height: 20px;
+  }
+
+  &__prev {
+    transform: rotate(180deg);
   }
 }
 
