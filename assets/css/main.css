@@ -441,7 +441,8 @@ body {
         display: block; } }
   .testimonials__carousel {
     margin: 24px 0;
-    overflow: hidden; }
+    overflow: hidden;
+    max-width: 100vw; }
     @media (min-width: 768px) {
       .testimonials__carousel {
         margin: 0 24px; } }
