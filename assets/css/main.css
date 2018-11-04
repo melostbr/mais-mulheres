@@ -73,7 +73,7 @@ body {
       width: auto; } }
   .twitter-button:hover {
     background-image: url("../img/icons/icn-twitter-white.svg");
-    background-position: left 22px top 15px;
+    background-position: left 22px top 10px;
     background-repeat: no-repeat; }
   .twitter-button a {
     color: inherit;
@@ -107,7 +107,7 @@ body {
       width: auto; } }
   .facebook-button:hover {
     background-image: url("../img/icons/icn-facebook-white.svg");
-    background-position: left 28px top 12px;
+    background-position: left 28px top 9px;
     background-repeat: no-repeat; }
   .facebook-button img {
     vertical-align: middle; }
