@@ -6,8 +6,18 @@
   &__logo {
     display: block;
     margin: 0 auto;
+    height: 28px;
+    width: 200px;
+    font-size: 0;
+
+    &::before {
+      content: '';
+      background: center / contain no-repeat url("../img/logo-programaria-grande.svg");
+      display: block;
+      height: 28px;
+    }
     @include breakpoint(md) {
-      display: inline;
+      margin: 0;
     }
   }
 }
@@ -26,7 +36,7 @@
   &__image {
     display: block;
     margin: 0 auto;
-    max-height: 220px;
+    max-height: 220px;    
     @include breakpoint(md) {
       display: inline;
     }
