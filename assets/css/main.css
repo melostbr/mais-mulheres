@@ -126,10 +126,18 @@ body {
   padding-bottom: 96px; }
   .main__logo {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 28px;
+    width: 200px;
+    font-size: 0; }
+    .main__logo::before {
+      content: '';
+      background: center/contain no-repeat url("../img/logo-programaria-grande.svg");
+      display: block;
+      height: 28px; }
     @media (min-width: 768px) {
       .main__logo {
-        display: inline; } }
+        margin: 0; } }
 
 .banner {
   align-items: center;
