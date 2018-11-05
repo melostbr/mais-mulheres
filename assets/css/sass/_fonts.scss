@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "Futura Bold";
+  src: url('../font/FuturaStd-Bold.eot') format('eot'),
+  url('../font/FuturaStd-Bold.otf') format('otf'),
+  url('../font/FuturaStd-Bold.woff') format('woff'),
+  url('../font/FuturaStd-Bold.woff2') format('woff2');
+}
+
+@font-face {
   font-family: "Futura Bold Italic";
   src: url('../font/FuturaStd-HeavyOblique.eot') format('eot'),
   url('../font/FuturaStd-HeavyOblique.otf') format('otf'),
@@ -36,4 +44,3 @@
   url('../font/slick.woff') format('woff'),
   url('../font/slick.ttf') format('ttf'),
 }
-

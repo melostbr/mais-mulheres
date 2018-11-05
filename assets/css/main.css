@@ -30,6 +30,9 @@
   font-family: "Futura Light";
   src: url("../font/FuturaStd-Light.eot") format("eot"), url("../font/FuturaStd-Light.otf") format("otf"), url("../font/FuturaStd-Light.woff") format("woff"), url("../font/FuturaStd-Light.woff2") format("woff2"); }
 @font-face {
+  font-family: "Futura Bold";
+  src: url("../font/FuturaStd-Bold.eot") format("eot"), url("../font/FuturaStd-Bold.otf") format("otf"), url("../font/FuturaStd-Bold.woff") format("woff"), url("../font/FuturaStd-Bold.woff2") format("woff2"); }
+@font-face {
   font-family: "Futura Bold Italic";
   src: url("../font/FuturaStd-HeavyOblique.eot") format("eot"), url("../font/FuturaStd-HeavyOblique.otf") format("otf"), url("../font/FuturaStd-HeavyOblique.woff") format("woff"), url("../font/FuturaStd-HeavyOblique.woff2") format("woff2"); }
 @font-face {
@@ -42,11 +45,21 @@
   font-family: "slick";
   src: url("../font/slick.eot") format("eot"), url("../font/slick.woff") format("woff"), url("../font/slick.ttf") format("ttf"); }
 body * {
-  font-family: "Futura Book", sans-serif; }
+  font-family: 'Futura Book', sans-serif; }
 
 body {
   margin: 0;
   padding: 0; }
+
+.twitter-button, .facebook-button {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 294px; }
 
 .twitter-button {
   background: #ffffff;
@@ -55,26 +68,22 @@ body {
   color: #00ACED;
   padding: 10px 22px;
   transition: all 0.2s ease-in-out;
-  background-image: url("../img/icons/icn-twitter.svg");
-  background-position: left 22px top 10px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  font-size: 18px;
-  padding-left: 48px;
-  text-align: center;
-  width: 100%; }
+  background: left 1.5em top 11px/20px 16px no-repeat url("../img/icons/icn-twitter.svg"), #FFF; }
   .twitter-button:hover {
     background: #00ACED;
     border: 1px solid #00ACED;
     color: #ffffff;
     transition: all 0.2s ease-in-out; }
+  .twitter-button:hover {
+    background: left 1.5em top 11px/20px 16px no-repeat url("../img/icons/icn-twitter-white.svg"), #00ACED; }
   @media (min-width: 768px) {
     .twitter-button {
-      width: auto; } }
-  .twitter-button:hover {
-    background-image: url("../img/icons/icn-twitter-white.svg");
-    background-position: left 22px top 10px;
-    background-repeat: no-repeat; }
+      background-position-x: 12px;
+      margin: 0;
+      padding: 10px 8px 10px 33px;
+      width: 200px; }
+      .twitter-button:hover {
+        background-position-x: 12px; } }
   .twitter-button a {
     color: inherit;
     text-decoration: none; }
@@ -86,29 +95,22 @@ body {
   color: #3B5998;
   padding: 10px 22px;
   transition: all 0.2s ease-in-out;
-  background-image: url("../img/icons/icn-facebook.svg");
-  background-position: left 28px top 9px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  font-size: 18px;
-  margin-bottom: 24px;
-  padding-left: 44px;
-  text-align: center;
-  width: 100%; }
+  background: left 1.5em top 9px/9px 18px no-repeat url("../img/icons/icn-facebook.svg"), #fff; }
   .facebook-button:hover {
     background: #3B5998;
     border: 1px solid #3B5998;
     color: #ffffff;
     transition: all 0.2s ease-in-out; }
+  .facebook-button:hover {
+    background: left 1.5em top 9px/9px 18px no-repeat url("../img/icons/icn-facebook-white.svg"), #3B5998; }
   @media (min-width: 768px) {
     .facebook-button {
-      margin-bottom: 0;
-      margin-right: 16px;
-      width: auto; } }
-  .facebook-button:hover {
-    background-image: url("../img/icons/icn-facebook-white.svg");
-    background-position: left 28px top 9px;
-    background-repeat: no-repeat; }
+      background-position-x: 17px;
+      margin: 0 16px 0 0;
+      padding: 10px 16px 10px 34px;
+      width: 227px; }
+      .facebook-button:hover {
+        background-position-x: 17px; } }
   .facebook-button img {
     vertical-align: middle; }
   .facebook-button a {
@@ -147,41 +149,70 @@ body {
       .banner__image {
         display: inline; } }
   .banner__headline {
-    margin-top: 32px; }
+    margin-top: 32px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     @media (min-width: 768px) {
       .banner__headline {
-        margin-top: 0; } }
-  .banner__title h1 {
-    font-size: 40px;
-    letter-spacing: 1px;
-    line-height: 42px;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px 0; }
-  .banner__title span {
-    display: block; }
-  .banner__title::before {
-    content: '';
-    background: url("../img/curly_bracket_red.png") center/contain no-repeat;
-    display: inline-block;
-    height: 100px;
-    width: 45px; }
-  .banner__title::after {
-    content: '';
-    background: url("../img/curly_bracket_red.png") center/contain no-repeat;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    display: inline-block;
-    height: 100px;
-    width: 45px; }
+        align-items: flex-start;
+        margin-top: 0;
+        width: 443px; } }
+  .banner__title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .banner__title {
+        align-self: flex-start; } }
+    .banner__title h1 {
+      font-family: "Futura Bold";
+      font-weight: 100;
+      font-size: 7vw;
+      line-height: 1.5em;
+      text-transform: uppercase;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0; }
+      @media (min-width: 576px) {
+        .banner__title h1 {
+          font-size: 32px;
+          padding: 0 10px; } }
+    .banner__title span {
+      font-family: "Futura Bold";
+      font-weight: 100;
+      display: block; }
+    .banner__title::before {
+      content: '';
+      background: url("../img/curly-bracket-red.png") center/contain no-repeat;
+      display: inline-block;
+      flex-shrink: 1;
+      height: 24vw;
+      width: 7vw; }
+      @media (min-width: 576px) {
+        .banner__title::before {
+          height: 100px;
+          width: 32px; } }
+    .banner__title::after {
+      content: '';
+      background: url("../img/curly-bracket-red.png") center/contain no-repeat;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      display: inline-block;
+      flex-shrink: 1;
+      height: 24vw;
+      width: 7vw; }
+      @media (min-width: 576px) {
+        .banner__title::after {
+          height: 100px;
+          width: 32px; } }
   .banner__join-us {
     font-size: 16px;
     margin-bottom: 8px;
-    opacity: 0.9;
-    padding-left: 3.5em; }
+    opacity: 0.9; }
   .banner__hashtag {
     display: block;
     font-family: "Futura Light";
@@ -191,6 +222,7 @@ body {
   .banner__buttons {
     display: flex;
     flex-direction: column;
+    align-self: stretch;
     align-items: center; }
     @media (min-width: 768px) {
       .banner__buttons {
@@ -204,7 +236,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     max-width: 680px; }
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       .intro__content {
         height: 280px; }
         .intro__content::before {
@@ -409,7 +441,8 @@ body {
         display: block; } }
   .testimonials__carousel {
     margin: 24px 0;
-    overflow: hidden; }
+    overflow: hidden;
+    max-width: 100vw; }
     @media (min-width: 768px) {
       .testimonials__carousel {
         margin: 0 24px; } }
