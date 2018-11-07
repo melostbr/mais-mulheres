@@ -674,8 +674,16 @@ body {
     background: url("../img/logos/elas_programam.png") no-repeat center;
     background-size: contain;
     font-size: 0; }
+  .support__icon-emilias {
+    background: url("../img/logos/emilias.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
   .support__icon-forca_meninas {
     background: url("../img/logos/forca_meninas.png") no-repeat center;
+    background-size: contain;
+    font-size: 0; }
+  .support__icon-laboratoria {
+    background: url("../img/logos/laboratoria.png") no-repeat center;
     background-size: contain;
     font-size: 0; }
   .support__icon-marialab {
