@@ -152,7 +152,7 @@ body {
   .banner__image {
     display: block;
     margin: 0 auto;
-    max-height: 220px; }
+    max-height: 380px; }
     @media (min-width: 768px) {
       .banner__image {
         display: inline; } }
