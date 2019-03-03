@@ -1,0 +1,15 @@
+.events-section {
+  padding: 100px 0;
+  background: $wild-sand;
+
+  h3{
+    @extend %title;
+    color: $calypso;
+    text-align: center;
+  }
+
+  &__calendar{
+    margin:0 auto;
+    width: 50%;
+  }
+}

@@ -2,7 +2,17 @@
   "name": "mais-mulheres-intel",
   "version": "1.0.0",
   "description": "Repository for website maismulheresnatecnologia.org",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melostbr/mais-mulheres-intel.git"
+  },
+  "author": "Stefanie Melo <https://github.com/melostbr>",
+  "license": "Mozilla Public License 2.0",
+  "bugs": {
+    "url": "https://github.com/melostbr/mais-mulheres-intel/issues"
+  },
+  "homepage": "https://github.com/melostbr/mais-mulheres-intel#README",
+  "main": "main.js",
   "watch": {
     "uglifycss": "src/assets/css/main.css"
   },
@@ -12,19 +22,9 @@
     "sass-watch": "sass --watch src/assets/css/sass/main.scss:src/assets/css/main.css",
     "uglifycss": "uglifycss src/assets/css/main.css > src/assets/css/main.min.css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/melostbr/mais-mulheres-intel.git"
-  },
   "devDependencies": {
     "sass": "^1.13.0",
     "uglifycss": "^0.0.29",
     "npm-watch": "^0.6.0"
-  },
-  "author": "Stefanie Melo <https://github.com/melostbr>",
-  "license": "Mozilla Public License 2.0",
-  "bugs": {
-    "url": "https://github.com/melostbr/mais-mulheres-intel/issues"
-  },
-  "homepage": "https://github.com/melostbr/mais-mulheres-intel#README"
+  }
 }

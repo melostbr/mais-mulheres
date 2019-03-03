@@ -1,10 +1,9 @@
 .accomplishment {
-  background: $wild-sand;
   padding: 56px 0;
 
   &__title {
     @extend %title;
-    color: $calypso;
+    color: $victoria;
     text-align: center;
   }
 

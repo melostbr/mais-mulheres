@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.support__title, .accomplishment__title, .challenge__title, .how__title, .testimonials__title, .numbers .header__subtitle, .numbers .header__title {
+.events-section h3, .support__title, .accomplishment__title, .challenge__title, .how__title, .testimonials__title, .numbers .header__subtitle, .numbers .header__title {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -195,6 +195,7 @@ body {
   display: block;
   margin: 0 auto;
   max-height: 380px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .banner__image {
@@ -790,11 +791,10 @@ body {
 }
 
 .accomplishment {
-  background: #F6F6F6;
   padding: 56px 0;
 }
 .accomplishment__title {
-  color: #2F758E;
+  color: #5E4698;
   text-align: center;
 }
 .accomplishment__wrapper {
@@ -1260,6 +1260,19 @@ body {
 .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
+}
+
+.events-section {
+  padding: 100px 0;
+  background: #F6F6F6;
+}
+.events-section h3 {
+  color: #2F758E;
+  text-align: center;
+}
+.events-section__calendar {
+  margin: 0 auto;
+  width: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
