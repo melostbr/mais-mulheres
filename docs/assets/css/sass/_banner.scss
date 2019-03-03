@@ -36,7 +36,8 @@
   &__image {
     display: block;
     margin: 0 auto;
-    max-height: 380px;    
+    max-height: 380px;
+    width: 100;
     @include breakpoint(md) {
       display: inline;
     }

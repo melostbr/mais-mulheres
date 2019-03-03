@@ -20,6 +20,7 @@ $(function() {
     height: 300,
     contentHeight: 300,
     defaultView: 'listYear',
+    listDayFormat: 'DD/MM',
     timeZone: 'America/Sao_Paulo',
     noEventsMessage: 'Sem eventos no momento',
 

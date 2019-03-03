@@ -9,7 +9,14 @@
   }
 
   &__calendar{
+    width: 80%;
+
+    @include breakpoint(md) {
     margin:0 auto;
     width: 50%;
+    }
+  }
+  .fc-header-toolbar {
+    margin-left: 1em;
   }
 }

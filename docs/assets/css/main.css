@@ -195,7 +195,7 @@ body {
   display: block;
   margin: 0 auto;
   max-height: 380px;
-  width: 100%;
+  width: 100;
 }
 @media (min-width: 768px) {
   .banner__image {
@@ -1271,8 +1271,16 @@ body {
   text-align: center;
 }
 .events-section__calendar {
-  margin: 0 auto;
-  width: 50%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .events-section__calendar {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+.events-section .fc-header-toolbar {
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
