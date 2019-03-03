@@ -14,13 +14,13 @@
   "homepage": "https://github.com/melostbr/mais-mulheres-intel#README",
   "main": "main.js",
   "watch": {
-    "uglifycss": "src/assets/css/main.css"
+    "uglifycss": "docs/assets/css/main.css"
   },
   "scripts": {
     "all": "npm run watch | npm run sass-watch",
     "watch": "npm-watch",
-    "sass-watch": "sass --watch src/assets/css/sass/main.scss:src/assets/css/main.css",
-    "uglifycss": "uglifycss src/assets/css/main.css > src/assets/css/main.min.css"
+    "sass-watch": "sass --watch docs/assets/css/sass/main.scss:docs/assets/css/main.css",
+    "uglifycss": "uglifycss docs/assets/css/main.css > docs/assets/css/main.min.css"
   },
   "devDependencies": {
     "sass": "^1.13.0",
