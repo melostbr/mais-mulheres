@@ -5,9 +5,9 @@
   .header {
     align-items: stretch;
     display: flex;
-  
+
     &__item {
-      &:nth-child(1) {        
+      &:nth-child(1) {
         @include breakpoint(md) {
           border-right: 3px solid $victoria;
           flex-basis: 0;
@@ -16,7 +16,7 @@
           padding-right: 32px;
         }
       }
-  
+
       &:nth-child(2) {
         display: none;
 
@@ -29,11 +29,11 @@
         }
       }
     }
-    
+
     &__title {
       @extend %title;
       color: $victoria;
-      margin-bottom: 0;      
+      margin-bottom: 0;
 
       @include breakpoint(md) {
         text-align: right;
@@ -52,12 +52,12 @@
       color: $white;
       font-family: "Futura Book";
       margin: 8px 0 0;
-      
+
       @include breakpoint(md) {
         text-align: right;
       }
     }
-  
+
     &__subtitle {
       @extend %title;
       color: $victoria;
@@ -71,7 +71,7 @@
         font-family: "Futura Book";
       }
     }
-  
+
     &__hashtag {
       color: $white;
       text-transform: uppercase;
@@ -80,7 +80,7 @@
       letter-spacing: 2px;
     }
   }
-  
+
 }
 
 .data {

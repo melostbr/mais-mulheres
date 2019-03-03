@@ -17,19 +17,10 @@
   &__partner {
     text-align: center;
     margin-top: 8px;
-    
+
     a {
       color: $white;
     }
-  }
-
-  &__follow {
-    color: $burnt-sienna;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 32px;
-    text-align: center;
-    text-transform: uppercase;
   }
 
   &__rule {
@@ -45,9 +36,28 @@
 
 .social-media {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   margin: 24px auto 0;
-  max-width: 300px;
+  padding: 25px 0;
+  border-style: solid none;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 1px;
+
+  h3 {
+    color: $burnt-sienna;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__links {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+  }
 }
 
 .navigation {
@@ -55,7 +65,7 @@
   justify-content: space-around;
   margin: 32px auto 0;
   max-width: 500px;
-  
+
   a {
     color: $white;
     text-decoration: none;
